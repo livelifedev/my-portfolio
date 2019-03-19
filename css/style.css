@@ -35,6 +35,63 @@ body {
   width: 100%;
 }
 
+#skills {
+  height: 100vh;
+  min-height: 700px;
+}
+#skills .skillsChart {
+  display: grid;
+  grid-template-areas: "skills bar bar bar" "blank head head head";
+  grid-template-columns: 0 1fr 1fr 1fr;
+  grid-template-rows: minmax(400px, 60vh) 1fr;
+  max-width: 900px;
+}
+#skills .skillsChartLevel {
+  grid-area: head;
+  justify-content: space-around;
+}
+#skills .skillsChartLabel {
+  grid-area: skills;
+  flex-direction: column;
+  grid-column-start: 2;
+  z-index: 1;
+  justify-content: space-around;
+  font-size: 2em;
+}
+#skills .skillsChartBar {
+  grid-area: bar;
+  flex-direction: column;
+  justify-content: space-around;
+}
+#skills .skillsChartBar .bar {
+  border: 1px black solid;
+  background: orangered;
+  width: var(--w);
+  --w: 0%;
+  height: 80px;
+  transition: width 1.2s;
+}
+#skills .skillsChartBar .bar:nth-of-type(1) {
+  /*DESIGN*/
+  --w: 75%;
+}
+#skills .skillsChartBar .bar:nth-of-type(2) {
+  /*HTML*/
+  --w: 73%;
+}
+#skills .skillsChartBar .bar:nth-of-type(3) {
+  /*CSS*/
+  --w: 70%;
+}
+#skills .skillsChartBar .bar:nth-of-type(4) {
+  /*JS*/
+  --w: 68%;
+}
+#skills .skillsChartBar .bar:nth-of-type(5) {
+  /*RUBY*/
+  --w: 65%;
+}
+
 #gallery {
   display: grid;
   grid-gap: 5px;
