@@ -111,6 +111,30 @@ body {
   }
 }
 
+#contact {
+	width: 100%;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+
+	.contactMe,
+	.contactDetails {
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		width: 80%;
+		height: 200px;
+		background-color: orangered;
+		margin: 5px 0;
+		padding: 25px;
+	}
+
+	.contactDetails ul {
+		padding: 0;
+		list-style: none;
+	}
+}
+
 
 /*************** MEDIA QUERIES ***************/
 

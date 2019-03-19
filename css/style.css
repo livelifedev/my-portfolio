@@ -102,6 +102,28 @@ body {
   height: 100%;
 }
 
+#contact {
+  width: 100%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#contact .contactMe,
+#contact .contactDetails {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  height: 200px;
+  background-color: orangered;
+  margin: 5px 0;
+  padding: 25px;
+}
+#contact .contactDetails ul {
+  padding: 0;
+  list-style: none;
+}
+
 /*************** MEDIA QUERIES ***************/
 @media (min-width: 576px) {
   #gallery {
