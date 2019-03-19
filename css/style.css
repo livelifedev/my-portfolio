@@ -1,5 +1,34 @@
+@import url("https://fonts.googleapis.com/css?family=Fredericka+the+Great|Josefin+Slab:400,700");
 body {
   background-color: #1a2930;
+  font-size: 16px;
+  font-family: "Josefin Slab", serif;
+  color: #fff;
+}
+
+section {
+  margin: 60px 0 0 0;
+  padding: 0;
+}
+
+h1 {
+  font-family: "Fredericka the Great", cursive;
+  font-size: 4em;
+  color: orangered;
+  font-weight: lighter;
+}
+
+h2 {
+  text-align: center;
+  text-transform: uppercase;
+}
+
+h3 {
+  font-size: 1.8em;
+}
+
+p {
+  font-size: 1.2em;
 }
 
 .flex {
@@ -23,6 +52,7 @@ body {
 #navbar a {
   border: 1px black solid;
   padding: 5px;
+  text-decoration: none;
 }
 
 #about {
@@ -34,11 +64,12 @@ body {
 #about .portrait img {
   width: 100%;
 }
-
-#skills {
-  margin: 20px 0;
-  padding: 20px 0;
+#about .content {
+  background-color: orangered;
+  text-align: justify;
+  padding: 15px;
 }
+
 #skills .skillsChart {
   display: grid;
   grid-template-areas: "skills bar bar bar" "blank head head head";
@@ -92,9 +123,6 @@ body {
   --w: 65%;
 }
 
-#gallery {
-  text-align: center;
-}
 #gallery .gallery {
   display: grid;
   grid-gap: 5px;
@@ -134,7 +162,6 @@ body {
 #footer {
   width: 100%;
   text-align: center;
-  margin-top: 40px;
 }
 
 /*************** MEDIA QUERIES ***************/
