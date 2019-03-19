@@ -41,8 +41,8 @@ body {
 
 #skills {
 
-	height: 100vh;
-  min-height: 700px;
+	margin: 20px 0;
+	padding: 20px 0;
 
 	.skillsChart {
 		display: grid;
@@ -50,7 +50,7 @@ body {
 			"skills bar bar bar"
 			"blank head head head";
 		grid-template-columns: 0 1fr 1fr 1fr;
-		grid-template-rows: minmax(400px, 60vh) 1fr;
+		grid-template-rows: min(400px) 1fr;
 		max-width: 900px;
 	}
 
@@ -75,11 +75,11 @@ body {
 	}
 
 	.skillsChartBar .bar {
-		border: 1px black solid;
+		margin: 2px 0;
 		background: orangered;
 		width: var(--w);
 		--w: 0%;
-		height: 80px;
+		height: 85px;
 		transition: width 1.2s;
 	}
 
