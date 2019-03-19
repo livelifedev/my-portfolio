@@ -1,3 +1,30 @@
+body {
+  background-color: #1a2930;
+}
+
+.flex {
+  display: flex;
+}
+
+#title {
+  width: 100%;
+  height: calc(100vh - 80px);
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#navbar {
+  background-color: orangered;
+  height: 80px;
+  justify-content: center;
+  align-items: center;
+}
+#navbar a {
+  border: 1px black solid;
+  padding: 5px;
+}
+
 #gallery {
   display: grid;
   grid-gap: 5px;
