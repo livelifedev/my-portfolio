@@ -16,7 +16,7 @@ h1 {
   font-size: 4em;
   color: orangered;
   font-weight: lighter;
-  margin: 80px 0 0 0;
+  margin: 20px 0 0 0;
 }
 
 h2 {
@@ -28,6 +28,7 @@ h2 {
 
 h3 {
   font-size: 1.8em;
+  margin-bottom: 0;
 }
 
 p {
@@ -45,9 +46,20 @@ p {
   justify-content: center;
   align-items: center;
 }
+#title div {
+  width: 100%;
+  justify-content: center;
+  margin-top: 40px;
+}
+#title div img {
+  width: 25px;
+  align-self: center;
+  padding: 0 10px;
+}
 #title p {
   font-size: 1.3em;
-  padding-top: 3px;
+  padding-top: 8px;
+  margin: 0;
 }
 
 #navbar {
@@ -60,6 +72,7 @@ p {
   font-size: 1.4em;
   padding: 5px 12px;
   text-decoration: none;
+  color: inherit;
 }
 #navbar a:visited {
   color: inherit;
@@ -103,7 +116,6 @@ p {
   font-size: 1.2em;
   padding-top: 10px;
   margin-top: 8px;
-  border-top: #c5c1c073 1px solid;
 }
 #skills .skillsChartLabel {
   grid-area: skills;
@@ -126,6 +138,7 @@ p {
   --w: 0%;
   height: 85px;
   transition: width 1.2s;
+  border-radius: 0 2px 2px 0;
 }
 #skills .skillsChartBar .bar:nth-of-type(1) {
   /*DESIGN*/
@@ -151,11 +164,12 @@ p {
 #gallery .gallery {
   display: grid;
   grid-gap: 5px;
-  grid-template-columns: repeat(1, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   justify-items: center;
+  padding: 0 5px;
 }
 #gallery .gallery div {
-  width: 80%;
+  width: 100%;
 }
 #gallery .gallery div img {
   width: 100%;
@@ -178,10 +192,11 @@ p {
   background-color: orangered;
   margin: 5px 0;
   padding: 25px;
+  border-radius: 2px;
 }
 #contact .contactDetails ul {
-  padding: 0;
-  list-style: none;
+  padding: 0 80px 0 0;
+  font-size: 1.2em;
 }
 
 #footer {
@@ -191,22 +206,22 @@ p {
 
 /*************** MEDIA QUERIES ***************/
 @media (min-width: 576px) {
-  #gallery {
-    grid-template-columns: repeat(2, 1fr);
+  #gallery .gallery {
+    grid-template-columns: repeat(3, 1fr);
   }
 }
 @media (min-width: 768px) {
-  #gallery {
+  #gallery .gallery {
     grid-template-columns: repeat(3, 1fr);
   }
 }
 @media (min-width: 992px) {
-  #gallery {
+  #gallery .gallery {
     grid-template-columns: repeat(4, 1fr);
   }
 }
 @media (min-width: 1200px) {
-  #gallery {
+  #gallery .gallery {
     grid-template-columns: repeat(5, 1fr);
   }
 }
