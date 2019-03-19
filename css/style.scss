@@ -4,7 +4,7 @@ body {
 	background-color: #1a2930;
 	font-size: 16px;
 	font-family: 'Josefin Slab', serif;
-	color: #fff;
+	color: #c5c1c0;
 }
 
 section {
@@ -17,11 +17,14 @@ h1 {
 	font-size: 4em;
 	color: orangered;
 	font-weight: lighter;
+	margin: 80px 0 0 0;
 }
 
 h2 {
 	text-align: center;
+	font-size: 2em;
 	text-transform: uppercase;
+	font-weight: lighter;
 }
 
 h3 {
@@ -42,6 +45,11 @@ p {
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
+
+	p {
+		font-size: 1.3em;
+		padding-top: 3px;
+	}
 }
 
 #navbar {
@@ -51,9 +59,13 @@ p {
 	align-items: center;
 
 	a {
-		border: 1px black solid;
-		padding: 5px;
+		font-size: 1.4em;
+		padding: 5px 12px;;
 		text-decoration: none;
+	}
+
+	a:visited {
+		color: inherit;
 	}
 }
 
@@ -77,6 +89,15 @@ p {
 
 
 #skills {
+	width: 100%;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+
+	p {
+		width: 90%;
+		margin: 0 auto 20px;
+	}
 
 	.skillsChart {
 		display: grid;
@@ -91,6 +112,10 @@ p {
 	.skillsChartLevel {
 		grid-area: head;
 		justify-content: space-around;
+		font-size: 1.2em;
+		padding-top: 10px;
+		margin-top: 8px;
+		border-top: #c5c1c073 1px solid;
 	}
 
 	.skillsChartLabel {
@@ -100,6 +125,7 @@ p {
 		z-index: 1;
 		justify-content: space-around;
 		font-size: 2em;
+		padding-left: 8px;
 	}
 
 	.skillsChartBar {
