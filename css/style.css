@@ -25,6 +25,16 @@ body {
   padding: 5px;
 }
 
+#about {
+  flex-direction: column;
+}
+#about .portrait {
+  width: 100%;
+}
+#about .portrait img {
+  width: 100%;
+}
+
 #gallery {
   display: grid;
   grid-gap: 5px;

@@ -26,6 +26,18 @@ body {
 	}
 }
 
+#about {
+	flex-direction: column;
+
+	.portrait {
+		width: 100%;
+	}
+
+	.portrait img {
+		width: 100%;
+	}
+}
+
 #gallery {
 	display: grid;
 	grid-gap: 5px;
