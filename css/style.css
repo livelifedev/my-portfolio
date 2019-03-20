@@ -76,6 +76,7 @@ button {
 }
 
 #navbar {
+  z-index: 3;
   position: absolute;
   bottom: 0;
   width: 100%;
@@ -236,6 +237,13 @@ button {
 #footer {
   width: 100%;
   text-align: center;
+}
+
+.sticky #navbar {
+  height: 85px;
+  position: fixed;
+  top: 0;
+  bottom: initial;
 }
 
 /*************** MEDIA QUERIES ***************/
