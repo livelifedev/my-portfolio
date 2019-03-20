@@ -220,6 +220,20 @@ button {
   #gallery .gallery {
     grid-template-columns: repeat(3, 1fr);
   }
+
+  #skills {
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  #skills p {
+    width: 100%;
+    margin: 0 auto 20px;
+  }
+  #skills .skillsChart {
+    width: 80%;
+  }
 }
 @media (min-width: 768px) {
   #gallery .gallery {
@@ -236,20 +250,6 @@ button {
   }
   #about .content {
     width: 50%;
-  }
-
-  #skills {
-    width: 100%;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-  #skills p {
-    width: 100%;
-    margin: 0 auto 20px;
-  }
-  #skills .skillsChart {
-    width: 80%;
   }
 
   #contact .contactGroup {
@@ -269,6 +269,34 @@ button {
 @media (min-width: 1200px) {
   #gallery .gallery {
     grid-template-columns: repeat(5, 1fr);
+    padding: 0 20px;
+    width: 80%;
+    margin: auto;
+  }
+
+  #about .aboutGroup {
+    flex-direction: row;
+    justify-content: center;
+    margin: auto;
+    width: 80%;
+  }
+  #about .portrait {
+    width: 50%;
+    background-color: orangered;
+  }
+  #about .content {
+    width: 50%;
+  }
+
+  #contact .contactGroup {
+    flex-direction: row;
+    width: 80%;
+    margin: auto;
+  }
+  #contact .contactMe,
+#contact .contactDetails {
+    width: 40%;
+    margin: 5px 5px;
   }
 }
 
