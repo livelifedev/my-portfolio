@@ -87,7 +87,7 @@ button {
   color: inherit;
 }
 
-#about .group {
+#about .aboutGroup {
   flex-direction: column;
 }
 #about .portrait {
@@ -186,7 +186,7 @@ button {
   height: 100%;
 }
 
-#contact {
+#contact .contactGroup {
   width: 100%;
   flex-direction: column;
   justify-content: center;
@@ -225,21 +225,24 @@ button {
     grid-template-columns: repeat(3, 1fr);
   }
 
-  #about .group {
+  #about .aboutGroup {
     flex-direction: row;
   }
   #about .portrait {
     width: 50%;
     background-color: orangered;
   }
-  #about .portrait img {
-    width: 100%;
-  }
   #about .content {
-    background-color: orangered;
-    text-align: justify;
-    padding: 15px;
     width: 50%;
+  }
+
+  #contact .contactGroup {
+    flex-direction: row;
+  }
+  #contact .contactMe,
+#contact .contactDetails {
+    width: 40%;
+    margin: 5px 5px;
   }
 }
 @media (min-width: 992px) {

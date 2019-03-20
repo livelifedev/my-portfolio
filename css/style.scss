@@ -95,7 +95,7 @@ button {
 
 #about {
 	
-	.group {
+	.aboutGroup {
 		flex-direction: column;
 	}
 
@@ -211,10 +211,13 @@ button {
 }
 
 #contact {
-	width: 100%;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
+
+	.contactGroup {
+		width: 100%;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
 
 	.contactMe,
 	.contactDetails {
@@ -256,7 +259,7 @@ button {
 
 	#about {
 		
-		.group {
+		.aboutGroup {
 			flex-direction: row;
 		}
 
@@ -265,16 +268,23 @@ button {
 			background-color: orangered;
 		}
 	
-		.portrait img {
-			width: 100%;
-		}
-	
 		.content {
-			background-color: orangered;
-			text-align: justify;
-			padding: 15px;
 			width: 50%;
 		}
+	}
+
+	#contact {
+
+		.contactGroup {
+			flex-direction: row;
+		}
+	
+		.contactMe,
+		.contactDetails {
+			width: 40%;
+			margin: 5px 5px;
+		}
+	
 	}
 
 }
