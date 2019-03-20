@@ -87,11 +87,12 @@ button {
   color: inherit;
 }
 
-#about {
+#about .group {
   flex-direction: column;
 }
 #about .portrait {
   width: 100%;
+  line-height: 0;
 }
 #about .portrait img {
   width: 100%;
@@ -222,6 +223,23 @@ button {
 @media (min-width: 768px) {
   #gallery .gallery {
     grid-template-columns: repeat(3, 1fr);
+  }
+
+  #about .group {
+    flex-direction: row;
+  }
+  #about .portrait {
+    width: 50%;
+    background-color: orangered;
+  }
+  #about .portrait img {
+    width: 100%;
+  }
+  #about .content {
+    background-color: orangered;
+    text-align: justify;
+    padding: 15px;
+    width: 50%;
   }
 }
 @media (min-width: 992px) {

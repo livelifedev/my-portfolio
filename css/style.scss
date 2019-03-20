@@ -94,10 +94,14 @@ button {
 }
 
 #about {
-	flex-direction: column;
+	
+	.group {
+		flex-direction: column;
+	}
 
 	.portrait {
 		width: 100%;
+		line-height: 0;
 	}
 
 	.portrait img {
@@ -249,6 +253,30 @@ button {
 	#gallery .gallery {
 		grid-template-columns: repeat(3, 1fr); 
 	}
+
+	#about {
+		
+		.group {
+			flex-direction: row;
+		}
+
+		.portrait {
+			width: 50%;
+			background-color: orangered;
+		}
+	
+		.portrait img {
+			width: 100%;
+		}
+	
+		.content {
+			background-color: orangered;
+			text-align: justify;
+			padding: 15px;
+			width: 50%;
+		}
+	}
+
 }
 
 @media (min-width: 992px) {
