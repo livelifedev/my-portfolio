@@ -180,6 +180,7 @@ button {
 }
 #gallery .gallery div {
   width: 100%;
+  line-height: 0;
 }
 #gallery .gallery div img {
   width: 100%;
@@ -223,6 +224,7 @@ button {
 @media (min-width: 768px) {
   #gallery .gallery {
     grid-template-columns: repeat(3, 1fr);
+    padding: 0 20px;
   }
 
   #about .aboutGroup {
@@ -234,6 +236,20 @@ button {
   }
   #about .content {
     width: 50%;
+  }
+
+  #skills {
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  #skills p {
+    width: 100%;
+    margin: 0 auto 20px;
+  }
+  #skills .skillsChart {
+    width: 80%;
   }
 
   #contact .contactGroup {
