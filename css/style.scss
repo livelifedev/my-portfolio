@@ -5,6 +5,8 @@ body {
 	font-size: 16px;
 	font-family: 'Josefin Slab', serif;
 	color: #c5c1c0;
+	min-width: 350px;
+	min-height: 300px;
 }
 
 section {
@@ -352,10 +354,6 @@ button {
 	#title {
 		height: calc(100vh - 180px);
 	
-		// div {
-		// 	margin-top: 40px;
-		// }
-	
 		div img {
 			width: 50px;
 			align-self: center;
@@ -399,11 +397,6 @@ button {
 	}
 
 	#skills {
-		width: 100%;
-		flex-direction: column;
-		justify-content: center;
-		align-items: center;
-	
 		h2 {
 			margin-bottom: 20px;
 		}
@@ -423,13 +416,7 @@ button {
 		}
 
 		.skillsChartBar .bar {
-			margin: 2px 0;
-			background: orangered;
-			width: var(--w);
-			--w: 0%;
 			height: 120px;
-			transition: width 1.2s;
-			border-radius: 0 2px 2px 0;
 		}
 	
 	}
@@ -447,7 +434,6 @@ button {
 			margin: 5px 5px;
 			height: 380px;
 			padding: 40px;
-			// font-size: 0.8em;
 		}
 	
 	}

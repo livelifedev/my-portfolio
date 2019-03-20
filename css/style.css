@@ -4,6 +4,8 @@ body {
   font-size: 16px;
   font-family: "Josefin Slab", serif;
   color: #c5c1c0;
+  min-width: 350px;
+  min-height: 300px;
 }
 
 section {
@@ -335,12 +337,6 @@ button {
     margin-left: 15px;
   }
 
-  #skills {
-    width: 100%;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
   #skills h2 {
     margin-bottom: 20px;
   }
@@ -356,13 +352,7 @@ button {
     margin-top: 20px;
   }
   #skills .skillsChartBar .bar {
-    margin: 2px 0;
-    background: orangered;
-    width: var(--w);
-    --w: 0%;
     height: 120px;
-    transition: width 1.2s;
-    border-radius: 0 2px 2px 0;
   }
 
   #contact .contactGroup {
