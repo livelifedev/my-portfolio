@@ -4,7 +4,6 @@ body {
   font-size: 16px;
   font-family: "Josefin Slab", serif;
   color: #c5c1c0;
-  min-height: 300px;
 }
 
 section {
@@ -65,31 +64,31 @@ p {
   display: flex;
 }
 
-#title {
+.title {
   width: 100%;
   height: 100vh;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-#title div {
+.title div {
   width: 100%;
   justify-content: center;
   margin-top: 40px;
 }
-#title div img {
+.title div img {
   width: 25px;
   align-self: center;
   padding: 0 10px;
 }
-#title p {
+.title p {
   font-size: 1.3em;
   padding-top: 8px;
   margin: 0;
   letter-spacing: 1px;
 }
 
-#navbar {
+.navbar {
   z-index: 3;
   position: absolute;
   bottom: 0;
@@ -99,61 +98,61 @@ p {
   justify-content: center;
   align-items: center;
 }
-#navbar a {
+.navbar a {
   font-size: 1.4em;
   padding: 5px 12px;
   text-decoration: none;
   color: inherit;
 }
-#navbar a:visited {
+.navbar a:visited {
   color: inherit;
 }
 
-#about .aboutGroup {
+.about .aboutGroup {
   flex-direction: column;
   margin: auto;
   width: 100%;
 }
-#about .portrait {
+.about .portrait {
   width: 100%;
   line-height: 0;
 }
-#about .portrait img {
+.about .portrait img {
   width: 100%;
 }
-#about .content {
+.about .content {
   background-color: orangered;
   text-align: justify;
   padding: 15px;
 }
 
-#skills {
+.skills {
   width: 100%;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-#skills h2 {
+.skills h2 {
   margin-bottom: 10px;
 }
-#skills p {
+.skills p {
   width: 90%;
   margin: 0 auto 20px;
 }
-#skills .skillsChart {
+.skills .skillsChart {
   display: grid;
   grid-template-areas: "skills bar bar bar" "blank head head head";
   grid-template-columns: 0 1fr 1fr 1fr;
   grid-template-rows: min(400px) 1fr;
 }
-#skills .skillsChartLevel {
+.skills .skillsChartLevel {
   grid-area: head;
   justify-content: space-around;
   font-size: 1.2em;
   padding-top: 10px;
   margin-top: 8px;
 }
-#skills .skillsChartLabel {
+.skills .skillsChartLabel {
   grid-area: skills;
   flex-direction: column;
   grid-column-start: 2;
@@ -162,13 +161,12 @@ p {
   font-size: 2em;
   padding-left: 8px;
 }
-#skills .skillsChartBar {
+.skills .skillsChartBar {
   grid-area: bar;
   flex-direction: column;
   justify-content: space-around;
 }
-
-.skillsChartBar .bar {
+.skills .skillsChartBar .bar {
   margin: 2px 0;
   background: orangered;
   width: var(--w);
@@ -203,12 +201,12 @@ p {
   --w: 65%;
 }
 
-#gallery .filter {
+.gallery .filter {
   width: 100%;
   text-align: center;
   margin-bottom: 10px;
 }
-#gallery .filter a {
+.gallery .filter a {
   display: inline-block;
   text-decoration: none;
   color: inherit;
@@ -218,37 +216,35 @@ p {
   width: 80px;
   font-size: 1.2em;
 }
-#gallery .filter a:hover {
+.gallery .filter a:hover {
   background-color: #c5c1c0;
   color: #1a2930;
 }
 
-.gallery {
+.galleryItems {
   display: grid;
   grid-gap: 5px;
   grid-template-columns: repeat(2, 1fr);
   justify-items: center;
   padding: 0 5px;
 }
-
-.gallery div {
+.galleryItems div {
   width: 100%;
   line-height: 0;
 }
-
-.gallery div img {
+.galleryItems div img {
   width: 100%;
   height: 100%;
 }
 
-#contact .contactGroup {
+.contact .contactGroup {
   width: 100%;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-#contact .contactMe,
-#contact .contactDetails {
+.contact .contactMe,
+.contact .contactDetails {
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -259,35 +255,35 @@ p {
   padding: 25px;
   border-radius: 2px;
 }
-#contact .contactDetails ul {
+.contact .contactDetails ul {
   list-style: none;
   padding: 0 80px 0 0;
   margin-bottom: 0;
   font-size: 1.2em;
 }
-#contact .contactDetails li {
+.contact .contactDetails li {
   display: block;
   height: 40px;
 }
-#contact .contactDetails li a {
+.contact .contactDetails li a {
   text-decoration: none;
   color: inherit;
 }
-#contact .contactDetails li a:hover {
-  color: #1a2930;
-}
-#contact .contactDetails li img {
+.contact .contactDetails li img {
   width: 30px;
   vertical-align: bottom;
 }
-#contact .contactButton {
+.contact .contactDetails li a:hover {
+  color: #1a2930;
+}
+.contact .contactButton {
   text-decoration: none;
   color: inherit;
   border: thin solid;
   padding: 20px 40px;
   border-radius: 2px;
 }
-#contact .contactButton:hover {
+.contact .contactButton:hover {
   background-color: #c5c1c0;
   color: orangered;
 }
@@ -314,7 +310,7 @@ p {
     font-size: 3.2em;
   }
 
-  #navbar a {
+  .navbar a {
     font-size: 1.2em;
   }
 
@@ -328,35 +324,35 @@ p {
     width: 500px;
   }
 
-  #about .aboutGroup {
+  .about .aboutGroup {
     width: 85%;
   }
 
-  #contact .contactMe,
-#contact .contactDetails {
+  .contact .contactMe,
+.contact .contactDetails {
     padding: 25px 0;
   }
 
-  #gallery .gallery {
+  .gallery .galleryItems {
     grid-template-columns: repeat(3, 1fr);
   }
 
-  #skills {
+  .skills {
     width: 100%;
     flex-direction: column;
     justify-content: center;
     align-items: center;
   }
-  #skills p {
+  .skills p {
     width: 100%;
     margin: 0 auto 20px;
   }
-  #skills .skillsChart {
+  .skills .skillsChart {
     width: 80%;
   }
 }
 @media (min-width: 768px) {
-  #gallery .gallery {
+  .gallery .galleryItems {
     grid-template-columns: repeat(3, 1fr);
     padding: 0 20px;
   }
@@ -369,35 +365,35 @@ p {
     letter-spacing: 4px;
   }
 
-  #title div img {
+  .title div img {
     width: 40px;
     align-self: center;
     padding: 0 20px;
   }
-  #title p {
+  .title p {
     font-size: 1.7em;
     padding-top: 8px;
     margin: 0;
     letter-spacing: 6px;
   }
 
-  #about .aboutGroup {
+  .about .aboutGroup {
     flex-direction: row;
     width: 100%;
   }
-  #about .portrait {
+  .about .portrait {
     width: 50%;
     background-color: orangered;
   }
-  #about .content {
+  .about .content {
     width: 50%;
   }
 
-  #contact .contactGroup {
+  .contact .contactGroup {
     flex-direction: row;
   }
-  #contact .contactMe,
-#contact .contactDetails {
+  .contact .contactMe,
+.contact .contactDetails {
     width: 40%;
     margin: 5px 5px;
     padding: 25px;
@@ -408,17 +404,16 @@ p {
   }
 }
 @media (min-width: 992px) {
-  #gallery .gallery {
+  .gallery .galleryItems {
     grid-template-columns: repeat(4, 1fr);
   }
-
-  #gallery .filter a {
+  .gallery .filter a {
     width: 100px;
     margin-bottom: 2px;
   }
 }
 @media (min-width: 1200px) {
-  #gallery .gallery {
+  .gallery .galleryItems {
     grid-template-columns: repeat(4, 1fr);
     padding: 0 20px;
     width: 80%;
@@ -433,54 +428,54 @@ p {
     letter-spacing: 4px;
   }
 
-  #title div img {
+  .title div img {
     width: 50px;
     align-self: center;
     padding: 0 20px;
   }
-  #title p {
+  .title p {
     font-size: 1.6em;
     padding-top: 8px;
     margin: 0;
     letter-spacing: 6px;
   }
 
-  #about .aboutGroup {
+  .about .aboutGroup {
     flex-direction: row;
     justify-content: center;
     margin: auto;
     width: 80%;
   }
-  #about .content p {
+  .about .content p {
     margin-right: 20px;
     margin-left: 15px;
   }
 
-  #skills h2 {
+  .skills h2 {
     margin-bottom: 20px;
   }
-  #skills p {
+  .skills p {
     margin: 0 auto 40px;
   }
-  #skills .skillsChart {
+  .skills .skillsChart {
     width: 80%;
     max-width: 1200px;
   }
-  #skills .skillsChartLevel {
+  .skills .skillsChartLevel {
     font-size: 1.4em;
     margin-top: 20px;
   }
-  #skills .skillsChartBar .bar {
+  .skills .skillsChartBar .bar {
     height: 120px;
   }
 
-  #contact .contactGroup {
+  .contact .contactGroup {
     flex-direction: row;
     width: 80%;
     margin: auto;
   }
-  #contact .contactMe,
-#contact .contactDetails {
+  .contact .contactMe,
+.contact .contactDetails {
     width: 50%;
     margin: 5px 5px;
     height: 300px;

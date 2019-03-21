@@ -5,7 +5,6 @@ body {
 	font-size: 16px;
 	font-family: 'Josefin Slab', serif;
 	color: #c5c1c0;
-	min-height: 300px;
 }
 
 section {
@@ -66,7 +65,7 @@ p {
 	display: flex;
 }
 
-#title {
+.title {
 	width: 100%;
 	height: 100vh;
 	flex-direction: column;
@@ -77,12 +76,12 @@ p {
 		width: 100%;
 		justify-content: center;
 		margin-top: 40px;
-	}
 
-	div img {
-		width: 25px;
-		align-self: center;
-		padding: 0 10px;
+		img {
+			width: 25px;
+			align-self: center;
+			padding: 0 10px;
+		}
 	}
 
 	p {
@@ -93,7 +92,7 @@ p {
 	}
 }
 
-#navbar {
+.navbar {
 	z-index: 3;
 	position: absolute;
 	bottom: 0;
@@ -115,7 +114,7 @@ p {
 	}
 }
 
-#about {
+.about {
 	
 	.aboutGroup {
 		flex-direction: column;
@@ -126,10 +125,10 @@ p {
 	.portrait {
 		width: 100%;
 		line-height: 0;
-	}
 
-	.portrait img {
-		width: 100%;
+		img {
+			width: 100%;
+		}
 	}
 
 	.content {
@@ -140,7 +139,7 @@ p {
 }
 
 
-#skills {
+.skills {
 	width: 100%;
 	flex-direction: column;
 	justify-content: center;
@@ -186,60 +185,52 @@ p {
 		grid-area: bar;
 		flex-direction: column;
 		justify-content: space-around;
+
+		.bar {
+			margin: 2px 0;
+			background: orangered;
+			width: var(--w);
+			--w: 0%;
+			height: 85px;
+			transition: width 1.2s;
+			border-radius: 0 2px 2px 0;
+		}
 	}
 
-}
-
-.skillsChartBar .bar {
-	margin: 2px 0;
-	background: orangered;
-	width: var(--w);
-	--w: 0%;
-	height: 85px;
-	transition: width 1.2s;
-	// opacity: 0;
-	border-radius: 0 2px 2px 0;
 }
 
 .loaded .skillsChartBar .bar:nth-of-type(1) { /*DESIGN*/
 	--w: 75%;
-	// opacity: 1;
 }
 .loaded .skillsChartBar .bar:nth-of-type(2) { /*HTML*/
 	--w: 73%;
-	// opacity: 1;
 }
 .loaded .skillsChartBar .bar:nth-of-type(3) { /*CSS*/
 	--w: 70%;
-	// opacity: 1;
 }
 .loaded .skillsChartBar .bar:nth-of-type(4) { /*JS*/
 	--w: 68%;
-	// opacity: 1;
 }
 .loaded .skillsChartBar .bar:nth-of-type(5) { /*RUBY*/
 	--w: 65%;
-	// opacity: 1;
 }
 
-#gallery {
+.gallery {
 	.filter {
 		width: 100%;
 		text-align: center;
 		margin-bottom: 10px;
-	}
 
-	.filter a {
-		display: inline-block;
-		text-decoration: none;
-		color: inherit;
-		border: 1px solid;
-		border-radius: 2px;
-		padding: 9px 0 5px;
-		width: 80px;
-		font-size: 1.2em;
-		// background-color: #c5c1c0;
-		// color: #1a2930;
+		a {
+			display: inline-block;
+			text-decoration: none;
+			color: inherit;
+			border: 1px solid;
+			border-radius: 2px;
+			padding: 9px 0 5px;
+			width: 80px;
+			font-size: 1.2em;
+		}
 	}
 
 	.filter a:hover {
@@ -249,27 +240,25 @@ p {
 
 }
 
-.gallery {
+.galleryItems {
 	display: grid;
 	grid-gap: 5px;
 	grid-template-columns: repeat(2, 1fr);
 	justify-items: center;
 	padding: 0 5px;
+
+	div {
+		width: 100%;
+		line-height: 0;
+
+		img {
+			width: 100%;
+			height: 100%;
+		}
+	}
 }
 
-.gallery div {
-	width: 100%;
-	line-height: 0;
-}
-
-.gallery div img {
-	width: 100%;
-	height: 100%;
-}
-
-
-
-#contact {
+.contact {
 
 	.contactGroup {
 		width: 100%;
@@ -291,30 +280,32 @@ p {
 		border-radius: 2px;
 	}
 
-	.contactDetails ul {
-		list-style: none;
-		padding: 0 80px 0 0;
-		margin-bottom: 0;
-		font-size: 1.2em;
-	}
+	.contactDetails {
+		ul {
+			list-style: none;
+			padding: 0 80px 0 0;
+			margin-bottom: 0;
+			font-size: 1.2em;
+		}
 
-	.contactDetails li {
-		display: block;
-		height: 40px;
-	}
-
-	.contactDetails li a {
-		text-decoration: none;
-		color: inherit;
+		li {
+			display: block;
+			height: 40px;
+	
+			a {
+				text-decoration: none;
+				color: inherit;
+			}
+	
+			img {
+				width: 30px;
+				vertical-align: bottom;
+			}
+		}
 	}
 
 	.contactDetails li a:hover {
 		color: #1a2930;
-	}
-
-	.contactDetails li img {
-		width: 30px;
-		vertical-align: bottom;
 	}
 
 	.contactButton {
@@ -354,7 +345,7 @@ p {
 		font-size: 3.2em;
 	}
 
-	#navbar {
+	.navbar {
 		a {
 			font-size: 1.2em;
 		}
@@ -372,20 +363,20 @@ p {
 		width: 500px;
 	}
 
-	#about .aboutGroup {
+	.about .aboutGroup {
 		width: 85%;
 	}
 
-	#contact .contactMe,
-	#contact .contactDetails {
+	.contact .contactMe,
+	.contact .contactDetails {
 		padding: 25px 0;
 	}
 
-	#gallery .gallery {
+	.gallery .galleryItems {
 		grid-template-columns: repeat(3, 1fr);
 	}
 
-	#skills {
+	.skills {
 		width: 100%;
 		flex-direction: column;
 		justify-content: center;
@@ -405,8 +396,8 @@ p {
 }
 
 @media (min-width: 768px) {
-	#gallery {
-		.gallery {
+	.gallery {
+		.galleryItems {
 			grid-template-columns: repeat(3, 1fr);
 			padding: 0 20px;
 		}
@@ -420,8 +411,7 @@ p {
 		letter-spacing: 4px;
 	}
 
-	#title {
-	
+	.title {
 		div img {
 			width: 40px;
 			align-self: center;
@@ -436,8 +426,7 @@ p {
 		}
 	}
 
-	#about {
-		
+	.about {
 		.aboutGroup {
 			flex-direction: row;
 			width: 100%;
@@ -453,8 +442,7 @@ p {
 		}
 	}
 
-	#contact {
-
+	.contact {
 		.contactGroup {
 			flex-direction: row;
 		}
@@ -475,19 +463,19 @@ p {
 }
 
 @media (min-width: 992px) {
-	#gallery .gallery {
-		grid-template-columns: repeat(4, 1fr);
+	.gallery {
+		.galleryItems {
+			grid-template-columns: repeat(4, 1fr);
+		}
+		.filter a {
+			width: 100px;
+			margin-bottom: 2px;
+		}	
 	}
-
-	#gallery .filter a {
-		width: 100px;
-		margin-bottom: 2px;
-	}	
 }
 
 @media (min-width: 1200px) {
-
-	#gallery .gallery {
+	.gallery .galleryItems {
 		grid-template-columns: repeat(4, 1fr); 
 		padding: 0 20px;
 		width: 80%;
@@ -502,8 +490,7 @@ p {
 		letter-spacing: 4px;
 	}
 
-	#title {
-	
+	.title {
 		div img {
 			width: 50px;
 			align-self: center;
@@ -518,7 +505,7 @@ p {
 		}
 	}
 
-	#about {
+	.about {
 		.aboutGroup {
 			flex-direction: row;
 			justify-content: center;
@@ -532,7 +519,7 @@ p {
 		}
 	}
 
-	#skills {
+	.skills {
 		h2 {
 			margin-bottom: 20px;
 		}
@@ -554,10 +541,9 @@ p {
 		.skillsChartBar .bar {
 			height: 120px;
 		}
-	
 	}
 
-	#contact {
+	.contact {
 		.contactGroup {
 			flex-direction: row;
 			width: 80%;
@@ -571,7 +557,6 @@ p {
 			height: 300px;
 			padding: 40px;
 		}
-	
 	}
 
 	button {
