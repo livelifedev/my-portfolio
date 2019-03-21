@@ -9,8 +9,8 @@ body {
 }
 
 section {
-  margin: 60px 0 0 0;
-  padding: 0;
+  padding: 100px 0 0 0;
+  margin: 0;
 }
 
 h1 {
@@ -27,6 +27,7 @@ h2 {
   text-transform: uppercase;
   font-weight: lighter;
   letter-spacing: 2px;
+  margin-top: 0;
 }
 
 h3 {
@@ -79,6 +80,7 @@ button {
   z-index: 3;
   position: absolute;
   bottom: 0;
+  min-width: 350px;
   width: 100%;
   background-color: orangered;
   height: 85px;
@@ -152,7 +154,8 @@ button {
   flex-direction: column;
   justify-content: space-around;
 }
-#skills .skillsChartBar .bar {
+
+.skillsChartBar .bar {
   margin: 2px 0;
   background: orangered;
   width: var(--w);
@@ -161,23 +164,28 @@ button {
   transition: width 1.2s;
   border-radius: 0 2px 2px 0;
 }
-#skills .skillsChartBar .bar:nth-of-type(1) {
+
+.loaded .skillsChartBar .bar:nth-of-type(1) {
   /*DESIGN*/
   --w: 75%;
 }
-#skills .skillsChartBar .bar:nth-of-type(2) {
+
+.loaded .skillsChartBar .bar:nth-of-type(2) {
   /*HTML*/
   --w: 73%;
 }
-#skills .skillsChartBar .bar:nth-of-type(3) {
+
+.loaded .skillsChartBar .bar:nth-of-type(3) {
   /*CSS*/
   --w: 70%;
 }
-#skills .skillsChartBar .bar:nth-of-type(4) {
+
+.loaded .skillsChartBar .bar:nth-of-type(4) {
   /*JS*/
   --w: 68%;
 }
-#skills .skillsChartBar .bar:nth-of-type(5) {
+
+.loaded .skillsChartBar .bar:nth-of-type(5) {
   /*RUBY*/
   --w: 65%;
 }
@@ -230,8 +238,21 @@ button {
   border-radius: 2px;
 }
 #contact .contactDetails ul {
+  list-style: none;
   padding: 0 80px 0 0;
   font-size: 1.2em;
+}
+#contact .contactDetails li {
+  display: block;
+  height: 40px;
+}
+#contact .contactDetails li a {
+  text-decoration: none;
+  color: inherit;
+}
+#contact .contactDetails li img {
+  width: 30px;
+  vertical-align: bottom;
 }
 
 #footer {
@@ -322,11 +343,6 @@ button {
   }
 }
 @media (min-width: 1200px) {
-  section {
-    margin: 140px 0 0 0;
-    padding: 0;
-  }
-
   #gallery .gallery {
     grid-template-columns: repeat(4, 1fr);
     padding: 0 20px;
@@ -360,9 +376,6 @@ button {
     margin: auto;
     width: 80%;
   }
-  #about .content {
-    font-size: 0.8em;
-  }
   #about .content p {
     margin-right: 20px;
     margin-left: 15px;
@@ -395,7 +408,7 @@ button {
 #contact .contactDetails {
     width: 40%;
     margin: 5px 5px;
-    height: 380px;
+    height: 300px;
     padding: 40px;
   }
 

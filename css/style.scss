@@ -10,8 +10,8 @@ body {
 }
 
 section {
-	margin: 60px 0 0 0;
-	padding: 0;
+	padding: 100px 0 0 0;
+	margin: 0;
 }
 
 h1 {
@@ -28,6 +28,7 @@ h2 {
 	text-transform: uppercase;
 	font-weight: lighter;
 	letter-spacing: 2px;
+	margin-top: 0;
 }
 
 h3 {
@@ -83,6 +84,7 @@ button {
 	z-index: 3;
 	position: absolute;
 	bottom: 0;
+	min-width: 350px;
 	width: 100%;
 	background-color: orangered;
 	height: 85px;
@@ -173,31 +175,32 @@ button {
 		justify-content: space-around;
 	}
 
-	.skillsChartBar .bar {
-		margin: 2px 0;
-		background: orangered;
-		width: var(--w);
-		--w: 0%;
-		height: 85px;
-		transition: width 1.2s;
-		border-radius: 0 2px 2px 0;
-	}
+}
 
-	.skillsChartBar .bar:nth-of-type(1) { /*DESIGN*/
-		--w: 75%;
-	}
-	.skillsChartBar .bar:nth-of-type(2) { /*HTML*/
-		--w: 73%;
-	}
-	.skillsChartBar .bar:nth-of-type(3) { /*CSS*/
-		--w: 70%;
-	}
-	.skillsChartBar .bar:nth-of-type(4) { /*JS*/
-		--w: 68%;
-	}
-	.skillsChartBar .bar:nth-of-type(5) { /*RUBY*/
-		--w: 65%;
-	}
+.skillsChartBar .bar {
+	margin: 2px 0;
+	background: orangered;
+	width: var(--w);
+	--w: 0%;
+	height: 85px;
+	transition: width 1.2s;
+	border-radius: 0 2px 2px 0;
+}
+
+.loaded .skillsChartBar .bar:nth-of-type(1) { /*DESIGN*/
+	--w: 75%;
+}
+.loaded .skillsChartBar .bar:nth-of-type(2) { /*HTML*/
+	--w: 73%;
+}
+.loaded .skillsChartBar .bar:nth-of-type(3) { /*CSS*/
+	--w: 70%;
+}
+.loaded .skillsChartBar .bar:nth-of-type(4) { /*JS*/
+	--w: 68%;
+}
+.loaded .skillsChartBar .bar:nth-of-type(5) { /*RUBY*/
+	--w: 65%;
 }
 
 #gallery {
@@ -261,8 +264,24 @@ button {
 	}
 
 	.contactDetails ul {
+		list-style: none;
 		padding: 0 80px 0 0;
 		font-size: 1.2em;
+	}
+
+	.contactDetails li {
+		display: block;
+		height: 40px;
+	}
+
+	.contactDetails li a {
+		text-decoration: none;
+		color: inherit;
+	}
+
+	.contactDetails li img {
+		width: 30px;
+		vertical-align: bottom;
 	}
 }
 
@@ -380,10 +399,10 @@ button {
 
 @media (min-width: 1200px) {
 
-	section {
-		margin: 140px 0 0 0;
-		padding: 0;
-	}
+	// section {
+	// 	margin: 140px 0 0 0;
+	// 	padding: 0;
+	// }
 
 	#gallery .gallery {
 		grid-template-columns: repeat(4, 1fr); 
@@ -422,10 +441,6 @@ button {
 			justify-content: center;
 			margin: auto;
 			width: 80%;
-		}
-	
-		.content {
-			font-size: 0.8em;
 		}
 
 		.content p {
@@ -470,7 +485,7 @@ button {
 		.contactDetails {
 			width: 40%;
 			margin: 5px 5px;
-			height: 380px;
+			height: 300px;
 			padding: 40px;
 		}
 	
