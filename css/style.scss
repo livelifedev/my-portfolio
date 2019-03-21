@@ -14,6 +14,23 @@ section {
 	margin: 0;
 }
 
+table {
+	margin-top: 50px;
+	padding: 20px;
+	border: 1px solid;
+	width: 310px;
+	height: 200px;
+	text-align: left;
+}
+
+th {
+	font-size: 1.4em;
+}
+
+td {
+	font-size: 1.2em;
+}
+
 h1 {
 	font-family: 'Fredericka the Great', cursive;
 	font-size: 4em;
@@ -248,7 +265,7 @@ p {
 		justify-content: center;
 		align-items: center;
 		width: 80%;
-		height: 200px;
+		height: 240px;
 		background-color: orangered;
 		margin: 5px 0;
 		padding: 25px;
@@ -258,6 +275,7 @@ p {
 	.contactDetails ul {
 		list-style: none;
 		padding: 0 80px 0 0;
+		margin-bottom: 0;
 		font-size: 1.2em;
 	}
 
@@ -308,6 +326,11 @@ p {
 /*************** MEDIA QUERIES ***************/
 
 @media (min-width: 576px) {
+
+	table {
+		width: 500px;
+	}
+
 	#gallery .gallery {
 		grid-template-columns: repeat(3, 1fr);
 	}
