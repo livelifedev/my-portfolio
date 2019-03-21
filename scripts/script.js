@@ -27,3 +27,18 @@ window.addEventListener("scroll", () => {
   stickyNavigation();
   chartAnim();
 });
+
+var filter = document.getElementById("filters").children;
+var trvGal = document.getElementById("travelGallery");
+var prjGal = document.getElementById("projectGallery");
+
+filter[0].onclick = function() {
+  trvGal.classList.add("hide");
+  prjGal.classList.remove("hide");
+  return false;
+}
+filter[1].onclick = function() {
+  trvGal.classList.remove("hide");
+  prjGal.classList.add("hide");
+  return false;
+}
