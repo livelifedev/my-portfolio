@@ -11,7 +11,7 @@ function stickyNavigation() {
 }
 
 function chartAnim() {
-  const skillsTop = document.getElementById("skills").offsetTop - 150;
+  const skillsTop = document.getElementById("skills").offsetTop - 200;
   if(window.pageYOffset >= skillsTop) {
     body.classList.add("loaded");
   } else {
