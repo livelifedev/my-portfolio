@@ -40,14 +40,6 @@ p {
   font-size: 1.2em;
 }
 
-button {
-  border-radius: 2px;
-  padding: 7px 15px 5px;
-  background-color: rgba(0, 0, 0, 0);
-  color: #c5c1c0;
-  border-color: #c5c1c0;
-}
-
 .flex {
   display: flex;
 }
@@ -250,9 +242,22 @@ button {
   text-decoration: none;
   color: inherit;
 }
+#contact .contactDetails li a:hover {
+  color: #1a2930;
+}
 #contact .contactDetails li img {
   width: 30px;
   vertical-align: bottom;
+}
+#contact .contactButton {
+  text-decoration: none;
+  color: inherit;
+  border: thin solid;
+  padding: 20px 40px;
+}
+#contact .contactButton:hover {
+  background-color: #c5c1c0;
+  color: orangered;
 }
 
 #footer {
