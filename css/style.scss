@@ -193,23 +193,29 @@ p {
 	--w: 0%;
 	height: 85px;
 	transition: width 1.2s;
+	// opacity: 0;
 	border-radius: 0 2px 2px 0;
 }
 
 .loaded .skillsChartBar .bar:nth-of-type(1) { /*DESIGN*/
 	--w: 75%;
+	// opacity: 1;
 }
 .loaded .skillsChartBar .bar:nth-of-type(2) { /*HTML*/
 	--w: 73%;
+	// opacity: 1;
 }
 .loaded .skillsChartBar .bar:nth-of-type(3) { /*CSS*/
 	--w: 70%;
+	// opacity: 1;
 }
 .loaded .skillsChartBar .bar:nth-of-type(4) { /*JS*/
 	--w: 68%;
+	// opacity: 1;
 }
 .loaded .skillsChartBar .bar:nth-of-type(5) { /*RUBY*/
 	--w: 65%;
+	// opacity: 1;
 }
 
 #gallery {
@@ -224,10 +230,17 @@ p {
 		text-decoration: none;
 		color: inherit;
 		border: 1px solid;
+		border-radius: 2px;
 		padding: 9px 0 5px;
 		width: 80px;
+		font-size: 1.2em;
 		// background-color: #c5c1c0;
 		// color: #1a2930;
+	}
+
+	.filter a:hover {
+		background-color: #c5c1c0;
+		color: #1a2930;
 	}
 
 }
@@ -305,6 +318,7 @@ p {
 		color: inherit;
 		border: thin solid;
 		padding: 20px 40px;
+		border-radius: 2px;
 	}
 	
 	.contactButton:hover {
