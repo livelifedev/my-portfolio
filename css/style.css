@@ -15,23 +15,6 @@ section {
   max-width: 1200px;
 }
 
-table {
-  margin-top: 50px;
-  padding: 20px;
-  border: 1px solid;
-  width: 315px;
-  height: 200px;
-  text-align: left;
-}
-
-th {
-  font-size: 1.4em;
-}
-
-td {
-  font-size: 1.2em;
-}
-
 h1 {
   font-family: "Fredericka the Great", cursive;
   font-size: 3.6em;
@@ -175,6 +158,37 @@ p {
   height: 85px;
   transition: width 1.2s;
   border-radius: 0 2px 2px 0;
+}
+.skills .historyGroup {
+  flex-direction: column;
+  width: 85%;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2em;
+  margin-top: 35px;
+}
+.skills .historyGroup .work,
+.skills .historyGroup .school {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid;
+  width: 100%;
+  height: 240px;
+  margin-top: 10px;
+  border-radius: 2px;
+}
+.skills .historyGroup .work h4,
+.skills .historyGroup .school h4 {
+  font-size: 1.2em;
+  margin-bottom: 10px;
+  margin-top: 0;
+}
+.skills .historyGroup .work ol,
+.skills .historyGroup .school ol {
+  list-style: none;
+  padding: 0;
+  margin-top: 0;
 }
 
 .loaded .skillsChartBar .bar:nth-of-type(1) {
@@ -351,6 +365,9 @@ p {
   .skills .skillsChart {
     width: 80%;
   }
+  .skills .historyGroup {
+    width: 80%;
+  }
 }
 @media (min-width: 768px) {
   .gallery .galleryItems {
@@ -376,6 +393,16 @@ p {
     padding-top: 8px;
     margin: 0;
     letter-spacing: 6px;
+  }
+
+  .skills .historyGroup {
+    flex-direction: row;
+    width: 100%;
+  }
+  .skills .historyGroup .work,
+.skills .historyGroup .school {
+    width: 40%;
+    margin: 5px 5px;
   }
 
   .about .aboutGroup {
