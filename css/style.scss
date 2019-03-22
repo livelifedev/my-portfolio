@@ -1,10 +1,19 @@
 @import url('https://fonts.googleapis.com/css?family=Fredericka+the+Great|Josefin+Slab:400,700');
 
+$color1: #da450b; 
+$color2: #1a2930;
+$color3: #c5c1c0;
+//#f7ce3e
+//#ff4500
+//#e04406
+//#db450a
+//#da450b
+
 body {
-	background-color: #1a2930;
+	background-color: $color2;
 	font-size: 16px;
 	font-family: 'Josefin Slab', serif;
-	color: #c5c1c0;
+	color: $color3;
 }
 
 section {
@@ -36,7 +45,7 @@ td {
 h1 {
 	font-family: 'Fredericka the Great', cursive;
 	font-size: 3.6em;
-	color: orangered;
+	color: $color1;
 	font-weight: lighter;
 	margin: 0;
 	letter-spacing: 2px;
@@ -97,7 +106,7 @@ p {
 	position: absolute;
 	bottom: 0;
 	width: 100%;
-	background-color: orangered;
+	background-color: $color1;
 	height: 85px;
 	justify-content: center;
 	align-items: center;
@@ -125,6 +134,7 @@ p {
 	.portrait {
 		width: 100%;
 		line-height: 0;
+		background-color: $color1;
 
 		img {
 			width: 100%;
@@ -132,7 +142,7 @@ p {
 	}
 
 	.content {
-		background-color: orangered;
+		background-color: $color1;
 		text-align: justify;
 		padding: 15px;
 	}
@@ -188,7 +198,7 @@ p {
 
 		.bar {
 			margin: 2px 0;
-			background: orangered;
+			background: $color1;
 			width: var(--w);
 			--w: 0%;
 			height: 85px;
@@ -234,7 +244,7 @@ p {
 	}
 
 	.filter a:hover {
-		background-color: #c5c1c0;
+		background-color: $color3;
 		color: #1a2930;
 	}
 
@@ -274,7 +284,7 @@ p {
 		align-items: center;
 		width: 80%;
 		height: 240px;
-		background-color: orangered;
+		background-color: $color1;
 		margin: 5px 0;
 		padding: 25px;
 		border-radius: 2px;
@@ -305,7 +315,7 @@ p {
 	}
 
 	.contactDetails li a:hover {
-		color: #1a2930;
+		color: $color2;
 	}
 
 	.contactButton {
@@ -317,8 +327,8 @@ p {
 	}
 	
 	.contactButton:hover {
-		background-color: #c5c1c0;
-		color: orangered;
+		background-color: $color3;
+		color: $color1;
 	}
 }
 
@@ -434,7 +444,6 @@ p {
 
 		.portrait {
 			width: 50%;
-			background-color: orangered;
 		}
 	
 		.content {

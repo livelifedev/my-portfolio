@@ -35,7 +35,7 @@ td {
 h1 {
   font-family: "Fredericka the Great", cursive;
   font-size: 3.6em;
-  color: orangered;
+  color: #da450b;
   font-weight: lighter;
   margin: 0;
   letter-spacing: 2px;
@@ -93,7 +93,7 @@ p {
   position: absolute;
   bottom: 0;
   width: 100%;
-  background-color: orangered;
+  background-color: #da450b;
   height: 85px;
   justify-content: center;
   align-items: center;
@@ -116,12 +116,13 @@ p {
 .about .portrait {
   width: 100%;
   line-height: 0;
+  background-color: #da450b;
 }
 .about .portrait img {
   width: 100%;
 }
 .about .content {
-  background-color: orangered;
+  background-color: #da450b;
   text-align: justify;
   padding: 15px;
 }
@@ -168,7 +169,7 @@ p {
 }
 .skills .skillsChartBar .bar {
   margin: 2px 0;
-  background: orangered;
+  background: #da450b;
   width: var(--w);
   --w: 0%;
   height: 85px;
@@ -250,7 +251,7 @@ p {
   align-items: center;
   width: 80%;
   height: 240px;
-  background-color: orangered;
+  background-color: #da450b;
   margin: 5px 0;
   padding: 25px;
   border-radius: 2px;
@@ -285,7 +286,7 @@ p {
 }
 .contact .contactButton:hover {
   background-color: #c5c1c0;
-  color: orangered;
+  color: #da450b;
 }
 
 #footer {
@@ -383,7 +384,6 @@ p {
   }
   .about .portrait {
     width: 50%;
-    background-color: orangered;
   }
   .about .content {
     width: 50%;
