@@ -277,10 +277,21 @@ p {
 	div {
 		width: 100%;
 		line-height: 0;
+		background-color: #da450b;
 
 		img {
 			width: 100%;
 			height: 100%;
+		}
+
+		p {
+			text-align: center;
+			font-size: 1em;
+
+			a {
+				color: inherit;
+				display: inline-block;
+			}
 		}
 	}
 }

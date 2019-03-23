@@ -249,10 +249,19 @@ p {
 .galleryItems div {
   width: 100%;
   line-height: 0;
+  background-color: #da450b;
 }
 .galleryItems div img {
   width: 100%;
   height: 100%;
+}
+.galleryItems div p {
+  text-align: center;
+  font-size: 1em;
+}
+.galleryItems div p a {
+  color: inherit;
+  display: inline-block;
 }
 
 .fancybox-caption {
