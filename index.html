@@ -3,14 +3,14 @@
 <head>
 	<title>John Rubio | Portfolio</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/normalize.css" />
+		<link rel="stylesheet" href="css/normalize.css" />
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
 		<link rel="stylesheet" href="css/style.css" />
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	</head>
 	<body>
 		<div>
 			
-			<div>
 			<header id="title" class="title flex">
 					<h1>John Rubio</h1>
 					<p>Web Developer | Traveller</p>
@@ -118,69 +118,341 @@
 					<div id="filters">
 						<a href="#">Projects</a>
 						<a href="#">Travel</a>
+						<a href="#">Past</a>
 					</div>
 				</div>
 
 				<div id="projectGallery" class="galleryItems max">
 
 					<div>
-						<img src="images/gallery/projects/ecoquiz.jpg" alt="Screenshot of an eco quiz website" />
+						<a data-fancybox="gallery1"
+							data-caption="A web quiz created with HTML, CSS, JavaScript." 
+							href="images/gallery/projects/ecoquiz.jpg">
+							<img src="images/gallery/thumbs/ecoquiz_sm.jpg" alt="Screenshot of an eco quiz website" />
+						</a>
+						<p><a href="https://github.com/livelifedev">Eco Quiz</a></p>
 					</div>
 
 					<div>
-						<img src="images/gallery/projects/plantaro.png" alt="Pixel art from a terminal game" />
+						<a data-fancybox="gallery1"
+							data-caption="A virtual plant game created with Ruby." 
+							href="images/gallery/projects/plantaro.jpg">
+							<img src="images/gallery/thumbs/plantaro_sm.jpg" alt="Pixel art from a terminal game" />
+						</a>
+						<p><a href="https://github.com/livelifedev">Plantaro</a></p>
 					</div>
 					
 					<div>
-						<img src="images/gallery/projects/zen.jpg" alt="Screenshot of website for zen garden" />
+						<a data-fancybox="gallery1"
+							data-caption="A website styled with CSS using the Zen Garden HTML document." 
+							href="images/gallery/projects/zen.jpg">
+							<img src="images/gallery/thumbs/zen_sm.jpg" alt="Screenshot of website for zen garden" />
+						</a>
+						<p><a href="https://github.com/livelifedev">Zen Garden</a></p>
 					</div>
 					
 					<div>
-						<img src="images/gallery/projects/wisewords.png" alt="Screenshot of wise words website" />
-					</div>
-
-					<div>
-							<img src="images/gallery/projects/tictactoe.jpg" alt="Screenshot of tic tac toe terminal game" />
+						<a data-fancybox="gallery1"
+							data-caption="A quote generator created with HTML, CSS, JavaScript." 
+							href="images/gallery/projects/wisewords.jpg">
+							<img src="images/gallery/thumbs/wisewords_sm.jpg" alt="Screenshot of wise words website" />
+						</a>
+						<p><a href="https://github.com/livelifedev">Wise Words</a></p>
 					</div>
 					
 					<div>
-							<img src="images/gallery/projects/player.jpg" alt="Screenshot of music web player" />
-					</div>	
-
-					<div>
-						<img src="images/gallery/projects/calculator.jpg" alt="Screenshot of web calculator" />
+						<a data-fancybox="gallery1"
+							data-caption="A tic-tac-toe game on terminal created with Ruby." 
+							href="images/gallery/projects/tictactoe.jpg">
+							<img src="images/gallery/thumbs/tictactoe_sm.jpg" alt="Screenshot of tic tac toe terminal game" />
+						</a>
+						<p><a href="https://github.com/livelifedev">Tic-Tac-Toe</a></p>
 					</div>
+					
+					<div>
+						<a data-fancybox="gallery1"
+							data-caption="A web music player created with HTML, CSS, JavaScript." 
+							href="images/gallery/projects/player.jpg">
+							<img src="images/gallery/thumbs/player_sm.jpg" alt="Screenshot of music web player" />
+						</a>
+						<p><a href="https://github.com/livelifedev">Music Player</a></p>
+					</div>
+					
+					<div>
+						<a data-fancybox="gallery1"
+							data-caption="A web calculator created with HTML, CSS, JavaScript." 
+							href="images/gallery/projects/calculator.jpg">
+							<img src="images/gallery/thumbs/calculator_sm.jpg" alt="Screenshot of web calculator" />
+						</a>
+						<p><a href="https://github.com/livelifedev">Simple Calculator</a></p>
+					</div>
+					
 				</div>
 
-				<div id="travelGallery" class="galleryItems hide">
+				<div id="travelGallery" class="galleryItems max hide">
 					
 					<div>
-						<img src="images/gallery/travel/banana.jpg" alt="Picture of John in a banana costume" />
-					</div>
-					
-					<div>
-						<img src="images/gallery/travel/hammock.jpg" alt="Picture of John on a hammock" />
-					</div>
-					
-					<div>
-						<img src="images/gallery/travel/island.jpg" alt="Picture of John on a scooter" />
-					</div>
-					
-					<div>
-						<img src="images/gallery/travel/moon.jpg" alt="Picture of John at Lunar Valley" />
+						<a data-fancybox="gallery2"
+							data-caption="Rocking the banana suit." 
+							href="images/gallery/travel/banana.jpg">
+							<img src="images/gallery/thumbs/banana_sm.jpg" alt="Picture of John in a banana costume" />
+						</a>
+						<p>Halloween</p>
 					</div>
 
 					<div>
-						<img src="images/gallery/travel/rice.jpg" alt="Picture of John at the rice terraces" />
+						<a data-fancybox="gallery2"
+							data-caption="Enjoying island life." 
+							href="images/gallery/travel/hammock.jpg">
+							<img src="images/gallery/thumbs/hammock_sm.jpg" alt="Picture of John on a hammock" />
+						</a>
+						<p>Island Life</p>
 					</div>
-
+					
 					<div>
-						<img src="images/gallery/travel/cactus.jpg" alt="Picture of John at cactus island" />
+						<a data-fancybox="gallery2"
+							data-caption="Setting off for an adventure." 
+							href="images/gallery/travel/island.jpg">
+							<img src="images/gallery/thumbs/island_sm.jpg" alt="Picture of John on a scooter" />
+						</a>
+						<p>Scooter Adventure</p>
+					</div>
+					
+					<div>
+						<a data-fancybox="gallery2"
+							data-caption="Picture perfect lake town, Interlaken." 
+							href="images/gallery/travel/lake.jpg">
+							<img src="images/gallery/thumbs/lake_sm.jpg" alt="Photo of Interlaken in Switzerland" />
+						</a>
+						<p>Lake Town</p>
+					</div>
+					
+					<div>
+						<a data-fancybox="gallery2"
+							data-caption="Morning ritual, watch the sun rise." 
+							href="images/gallery/travel/sunrise.jpg">
+							<img src="images/gallery/thumbs/sunrise_sm.jpg" alt="Photo of the sunrise in Bagan" />
+						</a>
+						<p>Sunrise</p>
+					</div>
+					
+					<div>
+						<a data-fancybox="gallery2"
+							data-caption="Chilling on the moon." 
+							href="images/gallery/travel/moon.jpg">
+							<img src="images/gallery/thumbs/moon_sm.jpg" alt="Picture of John at Moon Valley" />
+						</a>
+						<p>Moon Valley</p>
+					</div>
+					
+					<div>
+						<a data-fancybox="gallery2"
+							data-caption="Exploring the rice terraces." 
+							href="images/gallery/travel/rice.jpg">
+							<img src="images/gallery/thumbs/rice_sm.jpg" alt="Picture of John at the rice terraces" />
+						</a>
+						<p>Rice Terraces</p>
+					</div>
+					
+					<div>
+						<a data-fancybox="gallery2"
+							data-caption="Down the cliff." 
+							href="images/gallery/travel/absail.jpg">
+							<img src="images/gallery/thumbs/absail_sm.jpg" alt="Photo of John abseiling" />
+						</a>
+						<p>Abseil</p>
+					</div>
+					
+					<div>
+						<a data-fancybox="gallery2"
+							data-caption="The ancient city in the clouds." 
+							href="images/gallery/travel/machu.jpg">
+							<img src="images/gallery/thumbs/machu_sm.jpg" alt="Picture of John at Machu Picchu" />
+						</a>
+						<p>Machu Picchu</p>
 					</div>
 	
 				</div>
-
+				
+				
+				<div id="pastGallery" class="galleryItems max hide">
+					
+					<div>
+						<a data-fancybox="gallery3"
+							data-caption="Balloon Boy, created in Adobe Illustrator." 
+							href="images/gallery/past/balloon.jpg">
+							<img src="images/gallery/past/thumbs/balloon_sm.jpg" alt="artwork" />
+						</a>
+						<p>Balloon Boy</p>
+					</div>
+					
+					<div>
+						<a data-fancybox="gallery3"
+							data-caption="Autumn Hair, created in Adobe Illustrator." 
+							href="images/gallery/past/fire.jpg">
+							<img src="images/gallery/past/thumbs/fire_sm.jpg" alt="artwork" />
+						</a>
+						<p>Autumn Hair</p>
+					</div>
+					
+					<div>
+						<a data-fancybox="gallery3"
+							data-caption="Character designs for an animation short." 
+							href="images/gallery/past/clyne.jpg">
+							<img src="images/gallery/past/thumbs/clyne_sm.jpg" alt="artwork" />
+						</a>
+						<p>Villain Character</p>
+					</div>
+					
+					<div>
+						<a data-fancybox="gallery3"
+							data-caption="Digital sculpt of an elf character." 
+							href="images/gallery/past/elf.jpg">
+							<img src="images/gallery/past/thumbs/elf_sm.jpg" alt="artwork" />
+						</a>
+						<p>Elf Character</p>
+					</div>
+					
+					<div>
+						<a data-fancybox="gallery3"
+							data-caption="A frog-tiger creature." 
+							href="images/gallery/past/creature.jpg">
+							<img src="images/gallery/past/thumbs/creature_sm.jpg" alt="artwork" />
+						</a>
+						<p>Frogo Creature</p>
+					</div>
+					
+					<div>
+						<a data-fancybox="gallery3"
+							data-caption="An alien creature." 
+							href="images/gallery/past/alien.jpg">
+							<img src="images/gallery/past/thumbs/alien_sm.jpg" alt="artwork" />
+						</a>
+						<p>Alien Creature</p>
+					</div>
+					
+					<div>
+						<a data-fancybox="gallery3"
+							data-caption="Digital sculpt of a head and prepared for rigging." 
+							href="images/gallery/past/head.jpg">
+							<img src="images/gallery/past/thumbs/head_sm.jpg" alt="artwork" />
+						</a>
+						<p>Head Sculpt</p>
+					</div>
+					
+					<div>
+						<a data-fancybox="gallery3"
+							data-caption="Digital sculpt, stylised character head." 
+							href="images/gallery/past/cartoonhead.jpg">
+							<img src="images/gallery/past/thumbs/cartoonhead_sm.jpg" alt="artwork" />
+						</a>
+						<p>Jarvis</p>
+					</div>
+					
+					<div>
+						<a data-fancybox="gallery3"
+							data-caption="3D environment model created from an initial sketch." 
+							href="images/gallery/past/downtown.jpg">
+							<img src="images/gallery/past/thumbs/downtown_sm.jpg" alt="artwork" />
+						</a>
+						<p>Downtown</p>
+					</div>
+					
+					<div>
+						<a data-fancybox="gallery3"
+							data-caption="Rebel leader character, low poly model for game." 
+							href="images/gallery/past/game.jpg">
+							<img src="images/gallery/past/thumbs/game_sm.jpg" alt="artwork" />
+						</a>
+						<p>Rebel Character</p>
+					</div>
+					
+					<div>
+						<a data-fancybox="gallery3"
+							data-caption="An alien spacecraft." 
+							href="images/gallery/past/spaceship.jpg">
+							<img src="images/gallery/past/thumbs/spaceship_sm.jpg" alt="artwork" />
+						</a>
+						<p>Spacecraft</p>
+					</div>
+					
+					<div>
+						<a data-fancybox="gallery3"
+							data-caption="Spaceboy, early sketches for an animation project." 
+							href="images/gallery/past/spaceboy.jpg">
+							<img src="images/gallery/past/thumbs/spaceboy_sm.jpg" alt="artwork" />
+						</a>
+						<p>Spaceboy</p>
+					</div>
+					
+					<div>
+						<a data-fancybox="gallery3"
+							data-caption="Character designs for Spaceboy animation project." 
+							href="images/gallery/past/spaceboy2.jpg">
+							<img src="images/gallery/past/thumbs/spaceboy2_sm.jpg" alt="artwork" />
+						</a>
+						<p>Spaceboy Cast</p>
+					</div>
+					
+					<div>
+						<a data-fancybox="gallery3"
+							data-caption="Early 3D blockout of Spaceboy and completed version for animation." 
+							href="images/gallery/past/boymodel.jpg">
+							<img src="images/gallery/past/thumbs/boymodel_sm.jpg" alt="artwork" />
+						</a>
+						<p>Spaceboy Model</p>
+					</div>
+					
+					<div>
+						<a data-fancybox="gallery3"
+							data-caption="Testing the facial rig and creating dynamic facial expressions." 
+							href="images/gallery/past/facerig.jpg">
+							<img src="images/gallery/past/thumbs/facerig_sm.jpg" alt="artwork" />
+						</a>
+						<p>Facial Rig</p>
+					</div>
+					
+					<div>
+						<a data-fancybox="gallery3"
+							data-caption="Concept artwork of alien enemy agent." 
+							href="images/gallery/past/liger.jpg">
+							<img src="images/gallery/past/thumbs/liger_sm.jpg" alt="artwork" />
+						</a>
+						<p>Man</p>
+					</div>
+					
+					<div>
+						<a data-fancybox="gallery3"
+							data-caption="Portrait of a pacifistic alien." 
+							href="images/gallery/past/pacifist.jpg">
+							<img src="images/gallery/past/thumbs/pacifist_sm.jpg" alt="artwork" />
+						</a>
+						<p>Pacifist</p>
+					</div>
+					
+					<div>
+						<a data-fancybox="gallery3"
+							data-caption="Footwear of ancient civilizations." 
+							href="images/gallery/past/shoe.jpg">
+							<img src="images/gallery/past/thumbs/shoe_sm.jpg" alt="artwork" />
+						</a>
+						<p>Runners</p>
+					</div>
+					
+					<div>
+						<a data-fancybox="gallery3"
+							data-caption="A challenge to make a twist on a fairy tale or story." 
+							href="images/gallery/past/redalice.jpg">
+							<img src="images/gallery/past/thumbs/redalice_sm.jpg" alt="artwork" />
+						</a>
+						<p>Red Alice</p>
+					</div>
+					
+				</div>
+				
 			</section>
+				
+
 			
 			<section id="contact" class="contact">
 
@@ -211,6 +483,7 @@
 			
 		</div>
 
+		<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
 		<script src="scripts/script.js"></script>
 
 	</body>

@@ -1,31 +1,48 @@
-const body = document.querySelector("body");
+var body = $("body");
+var skillsTopOffset = $("#skills").offset().top;
 
-function chartAnim() {
-  const skillsTop = document.getElementById("skills").offsetTop - 200;
-  if(window.pageYOffset >= skillsTop) {
-    body.classList.add("loaded");
-  } else {
-    body.classList.remove("loaded");
-  }
-}
-
-window.addEventListener("scroll", () => {
-  chartAnim();
-}, {
-  passive: true
+$(window).on("resize", function() {
+      skillsTopOffset = $("#skills").offset().top;
 });
 
-var filter = document.getElementById("filters").children;
-var trvGal = document.getElementById("travelGallery");
-var prjGal = document.getElementById("projectGallery");
+$(window).scroll(function() {
+	if(window.pageYOffset > skillsTopOffset - 400) {
+		body.addClass("loaded");
+	} else {
+		body.removeClass("loaded");
+	}
+});
 
-filter[0].onclick = function() {
-  trvGal.classList.add("hide");
-  prjGal.classList.remove("hide");
+
+var filters = $("#filters").children();
+var trvGal = $("#travelGallery");
+var prjGal = $("#projectGallery");
+var pstGal = $("#pastGallery");
+
+$(filters[0]).click(function() {
+	trvGal.addClass("hide");
+  prjGal.removeClass("hide");
+	pstGal.addClass("hide");
   return false;
-}
-filter[1].onclick = function() {
-  trvGal.classList.remove("hide");
-  prjGal.classList.add("hide");
+});
+
+$(filters[1]).click(function() {
+	trvGal.removeClass("hide");
+  prjGal.addClass("hide");
+	pstGal.addClass("hide");
   return false;
-}
+});
+
+$(filters[2]).click(function() {
+	trvGal.addClass("hide");
+  prjGal.addClass("hide");
+	pstGal.removeClass("hide");
+  return false;
+});
+
+
+$('[data-fancybox="gallery1"], [data-fancybox="gallery2"], [data-fancybox="gallery3"]').fancybox({
+  buttons: [
+    "close"
+  ]
+});

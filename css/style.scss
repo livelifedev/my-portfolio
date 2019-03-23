@@ -3,11 +3,6 @@
 $color1: #da450b; 
 $color2: #1a2930;
 $color3: #c5c1c0;
-//#f7ce3e
-//#ff4500
-//#e04406
-//#db450a
-//#da450b
 
 body {
 	background-color: $color2;
@@ -243,6 +238,7 @@ p {
 }
 
 .gallery {
+
 	.filter {
 		width: 100%;
 		text-align: center;
@@ -284,6 +280,12 @@ p {
 		}
 	}
 }
+
+.fancybox-caption {
+	font-size: 1.4em;
+	padding-bottom: 40px;
+}
+
 
 .contact {
 

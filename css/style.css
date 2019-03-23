@@ -252,6 +252,11 @@ p {
   height: 100%;
 }
 
+.fancybox-caption {
+  font-size: 1.4em;
+  padding-bottom: 40px;
+}
+
 .contact .contactGroup {
   width: 100%;
   flex-direction: column;
