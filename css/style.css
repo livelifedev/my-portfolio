@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Fredericka+the+Great|Josefin+Slab:400,700");
+@import url("https://fonts.googleapis.com/css?family=Fredericka+the+Great|Josefin+Slab:600");
 body {
   background-color: #1a2930;
   font-size: 16px;
@@ -159,7 +159,7 @@ p {
   width: var(--w);
   --w: 0%;
   height: 85px;
-  transition: width 0.9s;
+  transition: width 0.8s;
   border-radius: 0 2px 2px 0;
 }
 .skills .historyGroup {
