@@ -69,6 +69,10 @@ p {
 			align-self: center;
 			padding: 0 10px;
 		}
+
+		img:hover {
+			transform: scale(1.2);
+		}
 	}
 
 	p {
@@ -180,7 +184,7 @@ p {
 			width: var(--w);
 			--w: 0%;
 			height: 85px;
-			transition: width 1.2s;
+			transition: width 0.9s;
 			border-radius: 0 2px 2px 0;
 		}
 	}
@@ -411,6 +415,10 @@ p {
 
 		.skillsChart {
 			width: 80%;
+		}
+
+		.skillsChartBar .bar {
+			transition: width 1.2s;
 		}
 
 		.historyGroup {

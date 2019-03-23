@@ -64,6 +64,9 @@ p {
   align-self: center;
   padding: 0 10px;
 }
+.title div img:hover {
+  transform: scale(1.2);
+}
 .title p {
   font-size: 1.3em;
   padding-top: 8px;
@@ -156,7 +159,7 @@ p {
   width: var(--w);
   --w: 0%;
   height: 85px;
-  transition: width 1.2s;
+  transition: width 0.9s;
   border-radius: 0 2px 2px 0;
 }
 .skills .historyGroup {
@@ -362,6 +365,9 @@ p {
   }
   .skills .skillsChart {
     width: 80%;
+  }
+  .skills .skillsChartBar .bar {
+    transition: width 1.2s;
   }
   .skills .historyGroup {
     width: 80%;
