@@ -28,7 +28,6 @@ h2 {
   text-align: center;
   font-size: 1.9em;
   text-transform: uppercase;
-  font-weight: lighter;
   letter-spacing: 2px;
   margin-top: 0;
 }
@@ -193,6 +192,14 @@ p {
   padding: 0;
   margin-top: 0;
 }
+.skills .historyGroup .work ol li span,
+.skills .historyGroup .school ol li span {
+  color: #da450b;
+}
+.skills .historyGroup .work ol li em,
+.skills .historyGroup .school ol li em {
+  font-size: 0.9em;
+}
 
 .loaded .skillsChartBar .bar:nth-of-type(1) {
   /*DESIGN*/
@@ -250,6 +257,7 @@ p {
   width: 100%;
   line-height: 0;
   background-color: #da450b;
+  border-radius: 2px;
 }
 .galleryItems div img {
   width: 100%;
