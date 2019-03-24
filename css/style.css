@@ -452,6 +452,10 @@ p {
   }
 }
 @media (min-width: 992px) {
+  body {
+    font-size: 17px;
+  }
+
   .gallery .galleryItems {
     grid-template-columns: repeat(4, 1fr);
   }
