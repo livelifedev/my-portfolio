@@ -18,7 +18,7 @@ section {
 h1 {
   font-family: "Fredericka the Great", cursive;
   font-size: 3.6em;
-  color: #da450b;
+  color: #e94716;
   font-weight: lighter;
   margin: 0;
   letter-spacing: 2px;
@@ -78,7 +78,7 @@ p {
   position: sticky;
   top: 0;
   width: 100%;
-  background-color: #da450b;
+  background-color: #e94716;
   height: 85px;
   justify-content: center;
   align-items: center;
@@ -101,13 +101,13 @@ p {
 .about .portrait {
   width: 100%;
   line-height: 0;
-  background-color: #da450b;
+  background-color: #e94716;
 }
 .about .portrait img {
   width: 100%;
 }
 .about .content {
-  background-color: #da450b;
+  background-color: #e94716;
   text-align: justify;
   padding: 15px;
 }
@@ -154,7 +154,7 @@ p {
 }
 .skills .skillsChartBar .bar {
   margin: 2px 0;
-  background: #da450b;
+  background: #e94716;
   width: var(--w);
   --w: 0%;
   height: 85px;
@@ -194,7 +194,7 @@ p {
 }
 .skills .historyGroup .work ol li span,
 .skills .historyGroup .school ol li span {
-  color: #da450b;
+  color: #e94716;
 }
 .skills .historyGroup .work ol li em,
 .skills .historyGroup .school ol li em {
@@ -256,7 +256,7 @@ p {
 .galleryItems div {
   width: 100%;
   line-height: 0;
-  background-color: #da450b;
+  background-color: #e94716;
   border-radius: 2px;
 }
 .galleryItems div img {
@@ -290,7 +290,7 @@ p {
   align-items: center;
   width: 80%;
   height: 240px;
-  background-color: #da450b;
+  background-color: #e94716;
   margin: 5px 0;
   padding: 25px;
   border-radius: 2px;
@@ -325,7 +325,7 @@ p {
 }
 .contact .contactButton:hover {
   background-color: #c5c1c0;
-  color: #da450b;
+  color: #e94716;
 }
 
 #footer {

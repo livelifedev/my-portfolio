@@ -1,6 +1,8 @@
 @import url('https://fonts.googleapis.com/css?family=Fredericka+the+Great|Josefin+Slab:600');
 
-$color1: #da450b; 
+// $color1: #fc441e; 
+// $color1: #e63c2b;
+$color1: #e94716;  
 $color2: #1a2930;
 $color3: #c5c1c0;
 
@@ -220,7 +222,7 @@ p {
 
 				li {
 					span {
-						color: #da450b;
+						color: $color1;
 					}
 					em {
 						font-size: 0.9em;
@@ -285,7 +287,7 @@ p {
 	div {
 		width: 100%;
 		line-height: 0;
-		background-color: #da450b;
+		background-color: $color1;
 		border-radius: 2px;
 
 		img {
