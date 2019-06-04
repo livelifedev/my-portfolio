@@ -1,4 +1,8 @@
 @import url("https://fonts.googleapis.com/css?family=Fredericka+the+Great|Josefin+Slab:600");
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background-color: #1a2930;
   font-size: 16px;
@@ -71,6 +75,18 @@ p {
   padding-top: 8px;
   margin: 0;
   letter-spacing: 1px;
+}
+.title .arrow {
+  text-align: center;
+  margin: 10px 0;
+  position: absolute;
+  bottom: 0;
+}
+.title .arrow img {
+  width: 60px;
+}
+.title .arrow a {
+  display: block;
 }
 
 .navbar {
