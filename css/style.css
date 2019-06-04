@@ -201,6 +201,16 @@ p {
 .skills .historyGroup .school ol li em {
   font-size: 0.9em;
 }
+.skills .resumeLink {
+  margin-top: 20px;
+  font-size: 1.4em;
+}
+.skills .resumeLink a {
+  color: #E94715;
+}
+.skills .resumeLink a:visited {
+  color: #E94715;
+}
 
 .loaded .skillsChartBar .bar:nth-of-type(1) {
   /*DESIGN*/

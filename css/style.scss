@@ -234,6 +234,19 @@ p {
 
 	}
 
+	.resumeLink {
+		margin-top: 20px;
+		font-size: 1.4em;
+		
+		a {
+			color: #E94715;
+		}
+	
+		a:visited {
+			color: #E94715;
+		}
+	}
+
 }
 
 .loaded .skillsChartBar .bar:nth-of-type(1) { /*DESIGN*/
