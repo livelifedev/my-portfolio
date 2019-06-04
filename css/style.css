@@ -546,5 +546,10 @@ p {
     padding: 20px 80px;
   }
 }
+@media (min-width: 1900px) {
+  body {
+    font-size: 18px;
+  }
+}
 
 /*# sourceMappingURL=style.css.map */
