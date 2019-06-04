@@ -239,11 +239,11 @@ p {
 				margin-top: 0;
 
 				li {
+					color: $color1;
 					span {
-						color: $color1;
-					}
-					em {
+						color: $color3;
 						font-size: 0.9em;
+						font-style: italic;
 					}
 				}
 			}
@@ -256,11 +256,11 @@ p {
 		font-size: 1.4em;
 		
 		a {
-			color: #E94715;
+			color: $color1;
 		}
 	
 		a:visited {
-			color: #E94715;
+			color: $color1;
 		}
 	}
 
@@ -658,7 +658,6 @@ p {
 			width: 50%;
 			margin: 5px 5px;
 			height: 300px;
-			padding: 40px;
 		}
 	}
 
@@ -667,7 +666,7 @@ p {
 	}
 
 	#footer {
-		margin-top: 60px;
+		margin-top: 80px;
 	}
 
 	table {
