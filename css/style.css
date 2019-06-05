@@ -76,6 +76,13 @@ p {
   margin: 0;
   letter-spacing: 1px;
 }
+.title .facts {
+  text-align: center;
+}
+.title .facts p {
+  font-size: 1em;
+  letter-spacing: 2px;
+}
 .title .arrow {
   text-align: center;
   margin: 10px 0;
