@@ -20,8 +20,12 @@ let length = iconsText.length;
 
 for (let i = 0; i < length; i++) {
 	$(icons[i]).click(function() {
-		$(iconsText).addClass("hide");
-		$(iconsText[i]).removeClass("hide");
+		if (!$(iconsText[i]).hasClass("hide")) {
+			$(iconsText[i]).addClass("hide");
+		} else {
+			$(iconsText).addClass("hide");
+			$(iconsText[i]).removeClass("hide");
+		}
 		return false;
 	});
 }
