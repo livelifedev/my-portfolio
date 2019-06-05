@@ -1,5 +1,5 @@
-var body = $("body");
-var skillsTopOffset = $("#skills").offset().top;
+let body = $("body");
+let skillsTopOffset = $("#skills").offset().top;
 
 $(window).on("resize", function() {
       skillsTopOffset = $("#skills").offset().top;
@@ -14,10 +14,23 @@ $(window).scroll(function() {
 });
 
 
-var filters = $("#filters").children();
-var trvGal = $("#travelGallery");
-var prjGal = $("#projectGallery");
-var pstGal = $("#pastGallery");
+let icons = $(".hobbyIcons").children();
+let iconsText = $(".facts").children();
+let length = iconsText.length;
+
+for (let i = 0; i < length; i++) {
+	$(icons[i]).click(function() {
+		$(iconsText).addClass("hide");
+		$(iconsText[i]).removeClass("hide");
+		return false;
+	});
+}
+
+
+let filters = $("#filters").children();
+let trvGal = $("#travelGallery");
+let prjGal = $("#projectGallery");
+let pstGal = $("#pastGallery");
 
 $(filters[0]).click(function() {
 	trvGal.addClass("hide");
