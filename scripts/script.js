@@ -20,22 +20,24 @@ let length = iconsText.length;
 let currentActive;
 
 for (let i = 0; i < length; i++) {
+	// let currentIcon = $(icons[i]);
 	$(icons[i]).click(function() {
 		if (!$(iconsText[i]).hasClass("hide")) {
-			$(iconsText[i]).addClass("hide");
 			$(icons[i]).attr("src", $(this).data("active") + ".png");
 			$(icons[i]).css("transform", "");
+			$(iconsText[i]).addClass("hide");
 		} else {
+			if (currentActive) {
+				currentActive.css("transform", "");
+				currentActive.attr("src", currentActive.data("active") + ".png");
+			}
+			$(icons[i]).css("transform", "scale(1.2)");
+			$(icons[i]).attr("src", $(this).data("active") + "-active.png");
+			
 			$(iconsText).addClass("hide");
 			$(iconsText[i]).removeClass("hide");
 
-			if (currentActive) {
-				currentActive.attr("src", currentActive.data("active") + ".png");
-				currentActive.css("transform", "");
-			}
-			$(icons[i]).attr("src", $(this).data("active") + "-active.png");
 			currentActive = $(icons[i]);
-			currentActive.css("transform", "scale(1.2)");
 		}
 		return false;
 	});
