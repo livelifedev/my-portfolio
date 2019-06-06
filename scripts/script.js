@@ -17,14 +17,22 @@ $(window).scroll(function() {
 let icons = $(".hobbyIcons").children();
 let iconsText = $(".facts").children();
 let length = iconsText.length;
+let currentActive;
 
 for (let i = 0; i < length; i++) {
 	$(icons[i]).click(function() {
 		if (!$(iconsText[i]).hasClass("hide")) {
 			$(iconsText[i]).addClass("hide");
+			$(icons[i]).attr("src", $(this).data("active") + ".png");
 		} else {
 			$(iconsText).addClass("hide");
 			$(iconsText[i]).removeClass("hide");
+
+			if (currentActive) {
+				currentActive.attr("src", currentActive.data("active") + ".png");
+			}
+			$(icons[i]).attr("src", $(this).data("active") + "-active.png");
+			currentActive = $(icons[i]);
 		}
 		return false;
 	});
