@@ -4,6 +4,12 @@ function preload(arrayOfImages) {
 	});
 }
 
+$(window).on("load", function() {
+	$(".loader .inner").fadeOut(500, function() {
+		$(".loader").fadeOut(750);
+	});
+});
+
 preload([
 	"images/icons/laptop-active.png",
 	"images/icons/sun-active.png",
