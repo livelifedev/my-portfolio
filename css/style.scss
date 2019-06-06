@@ -88,6 +88,7 @@ p {
 	}
 
 	.facts {
+		margin-top: 25px;
 		p {
 			position: absolute;
     	text-align: center;
@@ -452,6 +453,10 @@ p {
 	table {
 		padding: 4px;
 		width: 260px;
+	}
+
+	.title .facts {
+		margin-bottom: 80px;
 	}
 }
 

@@ -76,6 +76,9 @@ p {
   margin: 0;
   letter-spacing: 1px;
 }
+.title .facts {
+  margin-top: 25px;
+}
 .title .facts p {
   position: absolute;
   text-align: center;
@@ -393,6 +396,10 @@ p {
   table {
     padding: 4px;
     width: 260px;
+  }
+
+  .title .facts {
+    margin-bottom: 80px;
   }
 }
 @media (min-width: 576px) {
