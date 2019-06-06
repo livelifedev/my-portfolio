@@ -78,7 +78,6 @@ p {
 }
 .title .facts p {
   position: absolute;
-  width: 100%;
   text-align: center;
   font-size: 1em;
   letter-spacing: 2px;
@@ -86,6 +85,7 @@ p {
   left: 0;
   right: 0;
   margin: 0 auto;
+  padding: 10px;
 }
 .title .facts p span {
   color: #e94716;
