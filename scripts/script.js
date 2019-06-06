@@ -1,3 +1,35 @@
+let icons = $(".hobbyIcons").children();
+let iconsText = $(".facts").children();
+let length = iconsText.length;
+let currentActive;
+
+for (let i = 0; i < length; i++) {
+	$(icons[i]).click(function() {
+		if (!$(iconsText[i]).hasClass("hide")) {
+			//toggle off active icon when reclicked
+			$(iconsText[i]).addClass("hide");
+			$(icons[i]).attr("src", $(this).data("active") + ".png");
+			$(icons[i]).css("transform", "");
+			currentActive = null;
+		} else {
+			if (currentActive) {
+				//turn off current active icon when clicking on other
+				$(iconsText).addClass("hide");
+				currentActive.css("transform", "");
+				currentActive.attr("src", currentActive.data("active") + ".png");
+			}
+			//activate clicked icon
+			$(icons[i]).css("transform", "scale(1.2)");
+			$(icons[i]).attr("src", $(this).data("active") + "-active.png");
+			$(iconsText[i]).removeClass("hide");
+
+			currentActive = $(icons[i]);
+		}
+		return false;
+	});
+}
+
+
 let body = $("body");
 let skillsTopOffset = $("#skills").offset().top;
 
@@ -12,36 +44,6 @@ $(window).scroll(function() {
 		body.removeClass("loaded");
 	}
 });
-
-
-let icons = $(".hobbyIcons").children();
-let iconsText = $(".facts").children();
-let length = iconsText.length;
-let currentActive;
-
-for (let i = 0; i < length; i++) {
-	// let currentIcon = $(icons[i]);
-	$(icons[i]).click(function() {
-		if (!$(iconsText[i]).hasClass("hide")) {
-			$(icons[i]).attr("src", $(this).data("active") + ".png");
-			$(icons[i]).css("transform", "");
-			$(iconsText[i]).addClass("hide");
-		} else {
-			if (currentActive) {
-				currentActive.css("transform", "");
-				currentActive.attr("src", currentActive.data("active") + ".png");
-			}
-			$(icons[i]).css("transform", "scale(1.2)");
-			$(icons[i]).attr("src", $(this).data("active") + "-active.png");
-			
-			$(iconsText).addClass("hide");
-			$(iconsText[i]).removeClass("hide");
-
-			currentActive = $(icons[i]);
-		}
-		return false;
-	});
-}
 
 
 let filters = $("#filters").children();
