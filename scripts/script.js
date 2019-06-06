@@ -1,3 +1,17 @@
+function preload(arrayOfImages) {
+	$(arrayOfImages).each(function(){
+			$('<img/>')[0].src = this;
+	});
+}
+
+preload([
+	"images/icons/laptop-active.png",
+	"images/icons/sun-active.png",
+	"images/icons/beach-active.png",
+	"images/icons/mountain-active.png",
+	"images/icons/plane-active.png"
+]);
+
 let icons = $(".hobbyIcons").children();
 let iconsText = $(".facts").children();
 let length = iconsText.length;
