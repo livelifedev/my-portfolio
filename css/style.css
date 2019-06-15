@@ -349,6 +349,9 @@ p {
   justify-content: center;
   align-items: center;
 }
+.contact .contactGroup p span {
+  display: block;
+}
 .contact .contactMe,
 .contact .contactDetails {
   flex-direction: column;

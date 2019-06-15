@@ -390,6 +390,9 @@ p {
 		flex-direction: column;
 		justify-content: center;
 		align-items: center;
+		p span {
+			display: block;
+		}
 	}
 
 	.contactMe,
