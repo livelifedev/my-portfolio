@@ -27,7 +27,7 @@ body {
   background-color: #1a2930;
   font-size: 16px;
   font-family: "Josefin Slab", serif;
-  color: #c5c1c0;
+  color: #e5e3df;
 }
 
 section {
@@ -252,7 +252,7 @@ p {
 }
 .skills .historyGroup .work ol li span,
 .skills .historyGroup .school ol li span {
-  color: #c5c1c0;
+  color: #e5e3df;
   font-size: 0.9em;
   font-style: italic;
 }
@@ -308,7 +308,7 @@ p {
   font-size: 1.2em;
 }
 .gallery .filter a:hover {
-  background-color: #c5c1c0;
+  background-color: #e5e3df;
   color: #1a2930;
 }
 
@@ -393,7 +393,7 @@ p {
   border-radius: 2px;
 }
 .contact .contactButton:hover {
-  background-color: #c5c1c0;
+  background-color: #e5e3df;
   color: #e94716;
 }
 
