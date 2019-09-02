@@ -1,728 +1,721 @@
-@import url('https://fonts.googleapis.com/css?family=Fredericka+the+Great|Josefin+Slab:600');
+@import url("https://fonts.googleapis.com/css?family=Fredericka+the+Great|Josefin+Slab:600");
 
-// $color1: #fc441e; 
+// $color1: #fc441e;
 // $color1: #e63c2b;
-$color1: #e94716;  
+// $color1: #ff6103
+$color1: #e94716;
 $color2: #1a2930;
 $color3: #e5e3df;
 // #c5c1c0
 
 html {
-	scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 
 .loader {
-	width: 100%;
-	height: 100%;
-	background-color:	#1a2930;
-	position: fixed;
-	top: 0;
-	left: 0;
-	z-index: 10;
+  width: 100%;
+  height: 100%;
+  background-color: #1a2930;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
 }
 
 .loader .inner {
-	width: 100%;
-	height: 100%;
-	background: url(../images/icons/preloader.gif) center center no-repeat;
+  width: 100%;
+  height: 100%;
+  background: url(../images/icons/preloader.gif) center center no-repeat;
 }
 .wrapper {
-	min-width: 320px;
+  min-width: 320px;
 }
 
 body {
-	background-color: $color2;
-	font-size: 16px;
-	font-family: 'Josefin Slab', serif;
-	color: $color3;
+  background-color: $color2;
+  font-size: 16px;
+  font-family: "Josefin Slab", serif;
+  color: $color3;
 }
 
 section {
-	padding: 100px 0 0 0;
-	margin: 0;
+  padding: 100px 0 0 0;
+  margin: 0;
 }
 
 .max {
-	max-width: 1200px;
+  max-width: 1200px;
 }
 
 h1 {
-	font-family: 'Fredericka the Great', cursive;
-	font-size: 3.6em;
-	color: $color1;
-	font-weight: lighter;
-	margin: 0;
-	letter-spacing: 2px;
+  font-family: "Fredericka the Great", cursive;
+  font-size: 3.6em;
+  color: $color1;
+  font-weight: lighter;
+  margin: 0;
+  letter-spacing: 2px;
 }
 
 h2 {
-	text-align: center;
-	font-size: 1.9em;
-	text-transform: uppercase;
-	letter-spacing: 2px;
-	margin-top: 0;
+  text-align: center;
+  font-size: 1.9em;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-top: 0;
 }
 
 h3 {
-	font-size: 1.8em;
-	margin-bottom: 0;
-	margin-top: 6px;
+  font-size: 1.8em;
+  margin-bottom: 0;
+  margin-top: 6px;
 }
 
 p {
-	font-size: 1.2em;
+  font-size: 1.2em;
 }
 
 .flex {
-	display: flex;
+  display: flex;
 }
 
 .title {
-	width: 100%;
-	height: 100vh;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
+  width: 100%;
+  height: 100vh;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 
-	div {
-		width: 100%;
-		justify-content: center;
-		margin-top: 40px;
+  div {
+    width: 100%;
+    justify-content: center;
+    margin-top: 40px;
 
-		img {
-			width: 25px;
-			align-self: center;
-			padding: 0 10px;
-		}
+    img {
+      width: 25px;
+      align-self: center;
+      padding: 0 10px;
+    }
 
-		img:hover {
-			transform: scale(1.2);
-		}
-	}
+    img:hover {
+      transform: scale(1.2);
+    }
+  }
 
-	p {
-		font-size: 1.3em;
-		padding-top: 8px;
-		margin: 0;
-		letter-spacing: 1px;
-	}
+  p {
+    font-size: 1.3em;
+    padding-top: 8px;
+    margin: 0;
+    letter-spacing: 1px;
+  }
 
-	.facts {
-		margin-top: 25px;
-		p {
-			position: absolute;
-    	text-align: center;
-			font-size: 1em;
-			letter-spacing: 2px;
-			max-width: 800px;
-			left: 0;
-			right: 0;
-			margin: 0 auto;
-			padding: 10px;
+  .facts {
+    margin-top: 25px;
+    p {
+      position: absolute;
+      text-align: center;
+      font-size: 1em;
+      letter-spacing: 2px;
+      max-width: 800px;
+      left: 0;
+      right: 0;
+      margin: 0 auto;
+      padding: 10px;
 
-			span {
-				color: $color1;
-				// display: block;
-			}
-		}
-	}
+      span {
+        color: $color1;
+        // display: block;
+      }
+    }
+  }
 
-	.arrow {
-		text-align: center;
-		margin: 10px 0;
+  .arrow {
+    text-align: center;
+    margin: 10px 0;
     position: absolute;
-		bottom: 0;
-		img {
-			width: 60px;
-		}
-		a {
-			display: block;
-		}
-	}
+    bottom: 0;
+    img {
+      width: 60px;
+    }
+    a {
+      display: block;
+    }
+  }
 }
 
 .navbar {
-	z-index: 3;
-	position: sticky;
-	top: 0;
-	width: 100%;
-	background-color: $color1;
-	height: 85px;
-	justify-content: center;
-	align-items: center;
+  z-index: 3;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  background-color: $color1;
+  height: 85px;
+  justify-content: center;
+  align-items: center;
 
-	a {
-		font-size: 1.4em;
-		padding: 5px 12px;;
-		text-decoration: none;
-		color: inherit;
-	}
+  a {
+    font-size: 1.4em;
+    padding: 5px 12px;
+    text-decoration: none;
+    color: inherit;
+  }
 
-	a:visited {
-		color: inherit;
-	}
+  a:visited {
+    color: inherit;
+  }
 }
 
 .about {
-	
-	.aboutGroup {
-		flex-direction: column;
-		margin: auto;
-		width: 100%;
-	}
+  .aboutGroup {
+    flex-direction: column;
+    margin: auto;
+    width: 100%;
+  }
 
-	.portrait {
-		width: 100%;
-		line-height: 0;
-		background-color: $color1;
+  .portrait {
+    width: 100%;
+    line-height: 0;
+    background-color: $color1;
 
-		img {
-			width: 100%;
-		}
-	}
+    img {
+      width: 100%;
+    }
+  }
 
-	.content {
-		background-color: $color1;
-		text-align: justify;
-		padding: 15px;
-	}
+  .content {
+    background-color: $color1;
+    text-align: justify;
+    padding: 15px;
+  }
 }
-
 
 .skills {
-	width: 100%;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
+  width: 100%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 
-	h2 {
-		margin-bottom: 10px;
-	}
+  h2 {
+    margin-bottom: 10px;
+  }
 
-	p {
-		width: 90%;
-		margin: 0 auto 20px;
-	}
+  p {
+    width: 90%;
+    margin: 0 auto 20px;
+  }
 
-	.skillsChart {
-		display: grid;
-		grid-template-areas: 
-			"skills bar bar bar"
-			"blank head head head";
-		grid-template-columns: 0 1fr 1fr 1fr;
-		grid-template-rows: min(400px) 1fr;
-	}
+  .skillsChart {
+    display: grid;
+    grid-template-areas:
+      "skills bar bar bar"
+      "blank head head head";
+    grid-template-columns: 0 1fr 1fr 1fr;
+    grid-template-rows: min(400px) 1fr;
+  }
 
-	.skillsChartLevel {
-		grid-area: head;
-		justify-content: space-around;
-		font-size: 1.2em;
-		padding-top: 10px;
-		margin-top: 8px;
-		border-top: 1px solid;
-	}
+  .skillsChartLevel {
+    grid-area: head;
+    justify-content: space-around;
+    font-size: 1.2em;
+    padding-top: 10px;
+    margin-top: 8px;
+    border-top: 1px solid;
+  }
 
-	.skillsChartLabel {
-		grid-area: skills;
-		flex-direction: column;
-		grid-column-start: 2;
-		z-index: 1;
-		justify-content: space-around;
-		font-size: 2em;
-		padding-left: 8px;
-	}
+  .skillsChartLabel {
+    grid-area: skills;
+    flex-direction: column;
+    grid-column-start: 2;
+    z-index: 1;
+    justify-content: space-around;
+    font-size: 2em;
+    padding-left: 8px;
+  }
 
-	.skillsChartBar {
-		grid-area: bar;
-		flex-direction: column;
-		justify-content: space-around;
+  .skillsChartBar {
+    grid-area: bar;
+    flex-direction: column;
+    justify-content: space-around;
 
-		.bar {
-			margin: 2px 0;
-			background: $color1;
-			width: var(--w);
-			--w: 0%;
-			height: 85px;
-			transition: width 0.8s;
-			border-radius: 0 2px 2px 0;
-		}
-	}
+    .bar {
+      margin: 2px 0;
+      background: $color1;
+      width: var(--w);
+      --w: 0%;
+      height: 85px;
+      transition: width 0.8s;
+      border-radius: 0 2px 2px 0;
+    }
+  }
 
-	.historyGroup {
-		flex-direction: column;
-		width: 85%;
-		justify-content: center;
-		align-items: center;
-		font-size: 1.2em;
-		margin-top: 60px;
+  .historyGroup {
+    flex-direction: column;
+    width: 85%;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2em;
+    margin-top: 60px;
 
-		.work,
-		.school {
-			flex-direction: column;
-			justify-content: center;
-			align-items: center;
-			border: 1px solid;
-			width: 100%;
-			height: 240px;
-			margin-top: 10px;
-			border-radius: 2px;
+    .work,
+    .school {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      border: 1px solid;
+      width: 100%;
+      height: 240px;
+      margin-top: 10px;
+      border-radius: 2px;
 
-			h4 {
-				font-size: 1.2em;
-				margin-bottom: 10px;
-				margin-top: 0;
-			}
-	
-			ol {
-				list-style: none;
-				padding: 0;
-				margin-top: 0;
+      h4 {
+        font-size: 1.2em;
+        margin-bottom: 10px;
+        margin-top: 0;
+      }
 
-				li {
-					color: $color1;
-					span {
-						color: $color3;
-						font-size: 0.9em;
-						font-style: italic;
-					}
-				}
-			}
-		}
+      ol {
+        list-style: none;
+        padding: 0;
+        margin-top: 0;
 
-	}
+        li {
+          color: $color1;
+          span {
+            color: $color3;
+            font-size: 0.9em;
+            font-style: italic;
+          }
+        }
+      }
+    }
+  }
 
-	.resumeLink {
-		margin-top: 20px;
-		font-size: 1.4em;
-		
-		a {
-			color: $color1;
-		}
-	
-		a:visited {
-			color: $color1;
-		}
-	}
+  .resumeLink {
+    margin-top: 20px;
+    font-size: 1.4em;
 
+    a {
+      color: $color1;
+    }
+
+    a:visited {
+      color: $color1;
+    }
+  }
 }
 
-.loaded .skillsChartBar .bar:nth-of-type(1) { /*DESIGN*/
-	--w: 70%;
+.loaded .skillsChartBar .bar:nth-of-type(1) {
+  /*DESIGN*/
+  --w: 70%;
 }
-.loaded .skillsChartBar .bar:nth-of-type(2) { /*HTML*/
-	--w: 75%;
+.loaded .skillsChartBar .bar:nth-of-type(2) {
+  /*HTML*/
+  --w: 75%;
 }
-.loaded .skillsChartBar .bar:nth-of-type(3) { /*CSS*/
-	--w: 70%;
+.loaded .skillsChartBar .bar:nth-of-type(3) {
+  /*CSS*/
+  --w: 70%;
 }
-.loaded .skillsChartBar .bar:nth-of-type(4) { /*JS*/
-	--w: 68%;
+.loaded .skillsChartBar .bar:nth-of-type(4) {
+  /*JS*/
+  --w: 68%;
 }
-.loaded .skillsChartBar .bar:nth-of-type(5) { /*RUBY*/
-	--w: 65%;
+.loaded .skillsChartBar .bar:nth-of-type(5) {
+  /*RUBY*/
+  --w: 65%;
 }
 
 .gallery {
+  .filter {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 10px;
 
-	.filter {
-		width: 100%;
-		text-align: center;
-		margin-bottom: 10px;
+    a {
+      display: inline-block;
+      text-decoration: none;
+      color: inherit;
+      border: 1px solid;
+      border-radius: 2px;
+      padding: 6px 0;
+      width: 80px;
+      font-size: 1.2em;
+    }
+  }
 
-		a {
-			display: inline-block;
-			text-decoration: none;
-			color: inherit;
-			border: 1px solid;
-			border-radius: 2px;
-			padding: 6px 0;
-			width: 80px;
-			font-size: 1.2em;
-		}
-	}
-
-	.filter a:hover {
-		background-color: $color3;
-		color: #1a2930;
-	}
-
+  .filter a:hover {
+    background-color: $color3;
+    color: #1a2930;
+  }
 }
 
 .galleryItems {
-	display: grid;
-	grid-gap: 5px;
-	grid-template-columns: repeat(2, 1fr);
-	justify-items: center;
-	padding: 0 5px;
+  display: grid;
+  grid-gap: 5px;
+  grid-template-columns: repeat(2, 1fr);
+  justify-items: center;
+  padding: 0 5px;
 
-	div {
-		width: 100%;
-		line-height: 0;
-		background-color: $color1;
-		border-radius: 2px;
+  div {
+    width: 100%;
+    line-height: 0;
+    background-color: $color1;
+    border-radius: 2px;
 
-		img {
-			width: 100%;
-			height: 100%;
-		}
+    img {
+      width: 100%;
+      height: 100%;
+    }
 
-		p {
-			text-align: center;
-			font-size: 1em;
+    p {
+      text-align: center;
+      font-size: 1em;
 
-			a {
-				color: inherit;
-				display: inline-block;
-			}
-		}
-	}
+      a {
+        color: inherit;
+        display: inline-block;
+      }
+    }
+  }
 }
 
 .fancybox-caption {
-	font-size: 1.4em;
-	padding-bottom: 40px;
+  font-size: 1.4em;
+  padding-bottom: 40px;
 }
 
-
 .contact {
+  .contactGroup {
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    p span {
+      display: block;
+    }
+  }
 
-	.contactGroup {
-		width: 100%;
-		flex-direction: column;
-		justify-content: center;
-		align-items: center;
-		p span {
-			display: block;
-		}
-	}
+  .contactMe,
+  .contactDetails {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    height: 240px;
+    background-color: $color1;
+    margin: 5px 0;
+    padding: 25px;
+    border-radius: 2px;
+  }
 
-	.contactMe,
-	.contactDetails {
-		flex-direction: column;
-		justify-content: center;
-		align-items: center;
-		width: 80%;
-		height: 240px;
-		background-color: $color1;
-		margin: 5px 0;
-		padding: 25px;
-		border-radius: 2px;
-	}
+  .contactDetails {
+    ul {
+      list-style: none;
+      padding: 0 80px 0 0;
+      margin-bottom: 0;
+      font-size: 1.2em;
+    }
 
-	.contactDetails {
-		ul {
-			list-style: none;
-			padding: 0 80px 0 0;
-			margin-bottom: 0;
-			font-size: 1.2em;
-		}
+    li {
+      display: block;
+      height: 40px;
 
-		li {
-			display: block;
-			height: 40px;
-	
-			a {
-				text-decoration: none;
-				color: inherit;
-			}
-	
-			img {
-				width: 30px;
-				vertical-align: bottom;
-			}
-		}
-	}
+      a {
+        text-decoration: none;
+        color: inherit;
+      }
 
-	.contactDetails li a:hover {
-		color: $color2;
-	}
+      img {
+        width: 30px;
+        vertical-align: bottom;
+      }
+    }
+  }
 
-	.contactButton {
-		text-decoration: none;
-		color: inherit;
-		border: thin solid;
-		padding: 20px 40px;
-		border-radius: 2px;
-	}
-	
-	.contactButton:hover {
-		background-color: $color3;
-		color: $color1;
-	}
+  .contactDetails li a:hover {
+    color: $color2;
+  }
+
+  .contactButton {
+    text-decoration: none;
+    color: inherit;
+    border: thin solid;
+    padding: 20px 40px;
+    border-radius: 2px;
+  }
+
+  .contactButton:hover {
+    background-color: $color3;
+    color: $color1;
+  }
 }
 
 #footer {
-	width: 100%;
-	text-align: center;
+  width: 100%;
+  text-align: center;
 }
 
 .hide {
-	display: none;
+  display: none;
 }
 
 /*************** MEDIA QUERIES ***************/
 
 @media (max-width: 399px) {
-	h1 {
-		font-size: 3.2em;
-	}
+  h1 {
+    font-size: 3.2em;
+  }
 
-	.navbar {
-		a {
-			font-size: 1.2em;
-		}
-	}
+  .navbar {
+    a {
+      font-size: 1.2em;
+    }
+  }
 
-	table {
-		padding: 4px;
-		width: 260px;
-	}
+  table {
+    padding: 4px;
+    width: 260px;
+  }
 
-	.title .facts {
-		margin-bottom: 80px;
-	}
+  .title .facts {
+    margin-bottom: 80px;
+  }
 }
 
 @media (min-width: 576px) {
+  table {
+    width: 500px;
+  }
 
-	table {
-		width: 500px;
-	}
+  .about .aboutGroup {
+    width: 85%;
+  }
 
-	.about .aboutGroup {
-		width: 85%;
-	}
+  .contact .contactMe,
+  .contact .contactDetails {
+    padding: 25px 0;
+  }
 
-	.contact .contactMe,
-	.contact .contactDetails {
-		padding: 25px 0;
-	}
+  .gallery .galleryItems {
+    grid-template-columns: repeat(3, 1fr);
+  }
 
-	.gallery .galleryItems {
-		grid-template-columns: repeat(3, 1fr);
-	}
+  .skills {
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 
-	.skills {
-		width: 100%;
-		flex-direction: column;
-		justify-content: center;
-		align-items: center;
-	
-		p {
-			width: 100%;
-			margin: 0 auto 20px;
-		}
+    p {
+      width: 100%;
+      margin: 0 auto 20px;
+    }
 
-		.skillsChart {
-			width: 80%;
-		}
+    .skillsChart {
+      width: 80%;
+    }
 
-		.skillsChartBar .bar {
-			transition: width 1.2s;
-		}
+    .skillsChartBar .bar {
+      transition: width 1.2s;
+    }
 
-		.historyGroup {
-			width: 80%;
-		}
-	
-	}
-
+    .historyGroup {
+      width: 80%;
+    }
+  }
 }
 
 @media (min-width: 768px) {
-	.gallery {
-		.galleryItems {
-			grid-template-columns: repeat(3, 1fr);
-			padding: 0 20px;
-		}
-	}
+  .gallery {
+    .galleryItems {
+      grid-template-columns: repeat(3, 1fr);
+      padding: 0 20px;
+    }
+  }
 
-	h1 {
-		font-size: 6em;
-	}
+  h1 {
+    font-size: 6em;
+  }
 
-	h2 {
-		letter-spacing: 4px;
-	}
+  h2 {
+    letter-spacing: 4px;
+  }
 
-	.title {
-		div img {
-			width: 40px;
-			align-self: center;
-			padding: 0 20px;
-		}
-	
-		p {
-			font-size: 1.7em;
-			padding-top: 8px;
-			margin: 0;
-			letter-spacing: 6px;
-		}
-	}
+  .title {
+    div img {
+      width: 40px;
+      align-self: center;
+      padding: 0 20px;
+    }
 
-	.skills {
-		.historyGroup {
-			flex-direction: row;
-			width: 100%;
-	
-			.work,
-			.school {
-				width: 40%;
-				margin: 5px 5px;
-			}
-		}
-	}
+    p {
+      font-size: 1.7em;
+      padding-top: 8px;
+      margin: 0;
+      letter-spacing: 6px;
+    }
+  }
 
-	.about {
-		.aboutGroup {
-			flex-direction: row;
-			width: 100%;
-		}
+  .skills {
+    .historyGroup {
+      flex-direction: row;
+      width: 100%;
 
-		.portrait {
-			width: 50%;
-		}
-	
-		.content {
-			width: 50%;
-		}
-	}
+      .work,
+      .school {
+        width: 40%;
+        margin: 5px 5px;
+      }
+    }
+  }
 
-	.contact {
-		.contactGroup {
-			flex-direction: row;
-		}
-	
-		.contactMe,
-		.contactDetails {
-			width: 40%;
-			margin: 5px 5px;
-			padding: 25px;
-		}
-	
-	}
+  .about {
+    .aboutGroup {
+      flex-direction: row;
+      width: 100%;
+    }
 
-	#footer {
-		margin-top: 60px;
-	}
+    .portrait {
+      width: 50%;
+    }
 
+    .content {
+      width: 50%;
+    }
+  }
+
+  .contact {
+    .contactGroup {
+      flex-direction: row;
+    }
+
+    .contactMe,
+    .contactDetails {
+      width: 40%;
+      margin: 5px 5px;
+      padding: 25px;
+    }
+  }
+
+  #footer {
+    margin-top: 60px;
+  }
 }
 
 @media (min-width: 992px) {
-	body{
-		font-size: 17px;
-	}
-	
-	.gallery {
-		.galleryItems {
-			grid-template-columns: repeat(4, 1fr);
-		}
-		.filter a {
-			width: 100px;
-			margin-bottom: 2px;
-		}	
-	}
+  body {
+    font-size: 17px;
+  }
+
+  .gallery {
+    .galleryItems {
+      grid-template-columns: repeat(4, 1fr);
+    }
+    .filter a {
+      width: 100px;
+      margin-bottom: 2px;
+    }
+  }
 }
 
 @media (min-width: 1200px) {
-	.gallery .galleryItems {
-		grid-template-columns: repeat(4, 1fr); 
-		padding: 0 20px;
-		width: 80%;
-		margin: auto;
-	}
+  .gallery .galleryItems {
+    grid-template-columns: repeat(4, 1fr);
+    padding: 0 20px;
+    width: 80%;
+    margin: auto;
+  }
 
-	h1 {
-		font-size: 6em;
-	}
+  h1 {
+    font-size: 6em;
+  }
 
-	h2 {
-		letter-spacing: 4px;
-	}
+  h2 {
+    letter-spacing: 4px;
+  }
 
-	.title {
-		div img {
-			width: 50px;
-			align-self: center;
-			padding: 0 20px;
-		}
-	
-		p {
-			font-size: 1.6em;
-			padding-top: 8px;
-			margin: 0;
-			letter-spacing: 6px;
-		}
-	}
+  .title {
+    div img {
+      width: 50px;
+      align-self: center;
+      padding: 0 20px;
+    }
 
-	.about {
-		.aboutGroup {
-			flex-direction: row;
-			justify-content: center;
-			margin: auto;
-			width: 80%;
-		}
+    p {
+      font-size: 1.6em;
+      padding-top: 8px;
+      margin: 0;
+      letter-spacing: 6px;
+    }
+  }
 
-		.content p {
-			margin-right: 20px;
-			margin-left: 15px;
-		}
-	}
+  .about {
+    .aboutGroup {
+      flex-direction: row;
+      justify-content: center;
+      margin: auto;
+      width: 80%;
+    }
 
-	.skills {
-		h2 {
-			margin-bottom: 20px;
-		}
-	
-		p {
-			margin: 0 auto 40px;
-		}
+    .content p {
+      margin-right: 20px;
+      margin-left: 15px;
+    }
+  }
 
-		.skillsChart {
-			width: 80%;
-			max-width: 1200px;
-		}
+  .skills {
+    h2 {
+      margin-bottom: 20px;
+    }
 
-		.skillsChartLevel {
-			font-size: 1.4em;
-			margin-top: 20px;
-		}
+    p {
+      margin: 0 auto 40px;
+    }
 
-		.skillsChartBar .bar {
-			height: 120px;
-		}
-	}
+    .skillsChart {
+      width: 80%;
+      max-width: 1200px;
+    }
 
-	.contact {
-		.contactGroup {
-			flex-direction: row;
-			width: 80%;
-			margin: auto;
-		}
-	
-		.contactMe,
-		.contactDetails {
-			width: 50%;
-			margin: 5px 5px;
-			height: 300px;
-		}
-	}
+    .skillsChartLevel {
+      font-size: 1.4em;
+      margin-top: 20px;
+    }
 
-	button {
-		padding: 14px 30px 10px;
-	}
+    .skillsChartBar .bar {
+      height: 120px;
+    }
+  }
 
-	#footer {
-		margin-top: 80px;
-	}
+  .contact {
+    .contactGroup {
+      flex-direction: row;
+      width: 80%;
+      margin: auto;
+    }
 
-	table {
-		padding: 20px 80px;
-	}
+    .contactMe,
+    .contactDetails {
+      width: 50%;
+      margin: 5px 5px;
+      height: 300px;
+    }
+  }
+
+  button {
+    padding: 14px 30px 10px;
+  }
+
+  #footer {
+    margin-top: 80px;
+  }
+
+  table {
+    padding: 20px 80px;
+  }
 }
 
 @media (min-width: 1900px) {
-	body {
-		font-size: 18px;
-	}
+  body {
+    font-size: 18px;
+  }
 }
