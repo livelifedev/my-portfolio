@@ -186,9 +186,9 @@ p {
 }
 .skills .skillsChartLevel {
   grid-area: head;
-  justify-content: space-around;
+  justify-content: space-between;
   font-size: 1.2em;
-  padding-top: 10px;
+  padding: 10px 5px 0;
   margin-top: 8px;
   border-top: 1px solid;
 }
@@ -284,12 +284,12 @@ p {
 
 .loaded .skillsChartBar .bar:nth-of-type(4) {
   /*JS*/
-  --w: 68%;
+  --w: 78%;
 }
 
 .loaded .skillsChartBar .bar:nth-of-type(5) {
   /*RUBY*/
-  --w: 65%;
+  --w: 75%;
 }
 
 .gallery .filter {
