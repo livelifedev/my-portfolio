@@ -145,6 +145,7 @@ p {
 .navbar {
   z-index: 3;
   position: sticky;
+  position: -webkit-sticky;
   top: 0;
   width: 100%;
   background-color: $color1;
