@@ -377,6 +377,10 @@ p {
       }
     }
   }
+
+  div > a {
+    display: block;
+  }
 }
 
 .fancybox-caption {
